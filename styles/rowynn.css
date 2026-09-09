@@ -20,10 +20,14 @@ https://fonts.google.com/selection/embed
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* display ports!! or viewports!! or media queries!!!! */
+
+/* SOON! After thursday*/
+
 /* stylings */
 body {
   margin: 1em auto;
-  max-width: 70%;
+  max-width: 80%;
   color: var(--txt);
   background: var(--bg);
 }
@@ -65,13 +69,16 @@ h1 {
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
+  anchor-name: --student-card;
   scroll-snap-type: x mandatory;
-  scroll-snap-type: none;
-  text-align: center;
+  scroll-behavior: smooth;
   scrollbar-color: var(--primary) var(--bg);
+  text-align: center;
 }
 
 .student-card {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
   padding: 2em;
   scale: 1;
   transition: all 0.1s ease-in-out;
@@ -82,10 +89,24 @@ h1 {
   img {
     width: 20em;
     height: auto;
-    aspect-ratio: 3 /4;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
   }
   a {
     text-decoration: none;
   }
+}
+
+.carousel-campus {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  anchor-name: --campus-card;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-color: var(--primary) var(--bg);
+}
+
+.campus-card {
+  padding: 1em;
 }
