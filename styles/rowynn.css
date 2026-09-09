@@ -10,7 +10,7 @@ Hoe maak je CSS-only carousels? Tip van Sanne!
   --primary: #1d26be;
   --secondary: #8389eb;
   --accent: #291911;
-  --bg: #ddd;
+  --bg: #eee;
   --txt: #111;
 }
 
@@ -71,7 +71,6 @@ h1 {
   overflow-y: hidden;
   anchor-name: --student-card;
   scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
   scrollbar-color: var(--primary) var(--bg);
   text-align: center;
 }
