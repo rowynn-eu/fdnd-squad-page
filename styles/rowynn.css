@@ -3,12 +3,14 @@
   --primary: #1d26be;
   --secondary: #8389eb;
   --accent: #291911;
-  --bg: #fff;
-  --txt: #000;
+  --bg: #eee;
+  --txt: #111;
   /* mijn kleurenpalet */
 }
 
 body {
   margin: 5% auto;
   max-width: 70%;
+  color: var(--txt);
+  background: var(--bg);
 }
