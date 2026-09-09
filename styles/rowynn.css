@@ -1,15 +1,88 @@
+/* BRONNEN
+Hoe maak je CSS-only carousels? Tip van Sanne!
+- https://chrome.dev/carousel-configurator/
+- https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
+
+*/
+
+/* noey's KLEUREN PALET van maandag */
 :root {
-  /* noey's kleuren palet */
   --primary: #1d26be;
   --secondary: #8389eb;
   --accent: #291911;
-  --bg: #eee;
+  --bg: #ddd;
   --txt: #111;
 }
 
+/* 
+FONT van noey, geimporteerd via GOOGLE FONTS's embed code
+https://fonts.google.com/selection/embed
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* stylings */
 body {
-  margin: 5% auto;
+  margin: 1em auto;
   max-width: 70%;
   color: var(--txt);
   background: var(--bg);
+}
+
+header {
+  display: flex;
+  padding: 0.25em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  gap: 4em;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary);
+}
+
+h1 {
+  text-align: center;
+}
+
+/* carousels */
+
+.carousel-student {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-snap-type: none;
+  text-align: center;
+  scrollbar-color: var(--primary) var(--bg);
+}
+
+.student-card {
+  padding: 2em;
+  scale: 1;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    scale: 1.05;
+    transition: all 0.1s ease-in-out;
+  }
+  img {
+    width: 20em;
+    height: auto;
+    aspect-ratio: 3 /4;
+    object-fit: cover;
+  }
 }

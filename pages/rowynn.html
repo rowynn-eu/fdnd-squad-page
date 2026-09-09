@@ -1,19 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SQUAD 1K PAGE 26/27</title>
+    <title>FDND - YOUR SQUAD 26/27</title>
     <link rel="stylesheet" href="/styles/rowynn.css" />
   </head>
 
   <body>
     <!-- Navigatie voor de squad page -->
     <header>
+      <p>FDND Eerste Jaar</p>
       <nav>
-        <a href="#squad"> Your Squad </a>
-        <a href="#campus"> Amstelcampus </a>
+        <a href="#squad"> Squad </a>
+        <a href="#campus"> Campus</a>
       </nav>
+      <p>2026/2027</p>
     </header>
 
     <!-- Inhoud van de squad page + carousel-->
@@ -22,29 +24,61 @@
       <!-- Carousel Studenten -->
       <section>
         <h1>YOUR SQUAD</h1>
-        <p>Say hello to your SQUAD...</p>
+        <div class="carousel-student">
+          <!-- Ahmet -->
+          <article class="student-card">
+            <a href="https://temhasene.github.io/your-tribe-profile-card/">
+              <img src="/assets/students/Ahmet.JPG" />
+              <h2>Ahmet Kucuktepe</h2>
+            </a>
+          </article>
+          <!-- Aliya -->
+          <article class="student-card">
+            <a href="LINK">
+              <img src="/assets/students/Aliya.JPG" />
+              <h2>Aliya Harding</h2>
+            </a>
+          </article>
+          <!-- Aya -->
+          <article class="student-card">
+            <a href="LINK">
+              <img src="/assets/students/Aya.JPG" />
+              <h2>Aya Lefevere</h2>
+            </a>
+          </article>
+          <!-- Beyza -->
+          <article class="student-card">
+            <a href="LINK">
+              <img src="/assets/students/Aliya.JPG" />
+              <h2>Aliya</h2>
+            </a>
+          </article>
+          <!-- Bounyad -->
+          <article class="student-card">
+            <a href="LINK">
+              <img src="/assets/students/Aliya.JPG" />
+              <h2>Aliya</h2>
+            </a>
+          </article>
+        </div>
+
+        <!-- Studenten Carousel -->
       </section>
       <!-- Artikelen Amstelcampus -->
-      <section id=""campus">
+      <section id="campus">
         <h1>YOUR CAMPUS</h1>
-        <p>
-          Bij de Amstelcampus is er veel te doen naast je studie. Wil je weten
-          waar je
-          <a href="#food">eten kan halen</a>,
-          <a href="#study">rustig kan studeren</a> of
-          <a href="#social">waar je andere kan ontmoeten</a>?
-        </p>
+        <p>Bij de Amstelcampus is er veel te doen naast je studie.</p>
+        <a href="#food">Eten en drinken</a>
+        <a href="#social">Broedplaatsen</a>
+        <a href="#study">Studieplekken</a>
         <!-- Amstelcampus Categorie - FOOD JOINTS-->
         <section class="campus-category" id="food">
           <h2>FOOD</h2>
-          <p>
-            Zoek je een plek waar je eten kan halen? Er is keuze genoeg op de
-            Amstelcampus die 10 minuten op loop afstand zijn.
-          </p>
+          <p>Even pauze houden.</p>
           <!-- Carousel 1 ...-->
           <div class="carousel-campus">
             <!-- JMH 1 Cafe Ko -->
-            <article class="carousel-item campus-location-card">
+            <article class="campus-card">
               <h3>Jakoba Mulderhuis - Cafe Ko</h3>
               <p>
                 Rechts van de hoofdingang van de Jakoba Mulderhuis kan je bij
@@ -53,7 +87,7 @@
               </p>
             </article>
             <!-- JMH 2 - Food Boxes -->
-            <article class="carousel-item campus-location-card">
+            <article class="campus-card">
               <h3>Jakoba Mulderhuis - FOOD BOX</h3>
               <p>
                 In het midden van het Jakoba Mulderhuis op de begane grond zijn
@@ -62,7 +96,7 @@
               </p>
             </article>
             <!-- KSH 1 - Food Shop -->
-            <article class="carousel-item campus-location-card">
+            <article class="campus-card">
               <h3>Kohnstammhuis - KSH Food Shop</h3>
               <p>
                 In het grote vergaderruimte en broedplaats van het Kohnstammhuis
@@ -71,7 +105,7 @@
               </p>
             </article>
             <!-- WBH 1 - Spar -->
-            <article class="carousel-item campus-location-card">
+            <article class="campus-card">
               <h3>Wibauthuis - University Shop Spar</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet
@@ -84,14 +118,11 @@
         <!-- Amstelcampus Categorie - STUDY SPOTS-->
         <section class="campus-category" id="social">
           <h2>SOCIAL</h2>
-          <p>
-            Zoek je een plekje waar je kan studeren zonder prikkels? Probeer
-            deze locaties op de Amstelcampus
-          </p>
+          <p>Even kletsen.</p>
           <!-- Carousel 2 ...-->
           <div class="carousel-campus">
             <!-- BAGELs & BEANS -->
-            <article class="carousel-campus-item campus-location-card">
+            <article class="campus-card">
               <h3>Bagels & Beans</h3>
               <p>
                 Aan de ruyschstraat is er een Bagels & Beans, ideaal als je een
@@ -100,7 +131,7 @@
               </p>
             </article>
             <!-- COFFEE COMPANY-->
-            <article class="carousel-campus-item campus-location-card">
+            <article class="campus-card">
               <h3>coffeecompany</h3>
               <p>
                 Direct naast de HvA Amstelcampus is er een Coffeecompany waar je
@@ -109,7 +140,7 @@
               </p>
             </article>
             <!-- Cafe Fest-->
-            <article class="carousel-campus-item campus-location-card">
+            <article class="campus-card">
               <h3>Cafe Fest</h3>
               <p>
                 Jarenlang is cafe FEST de huiskamer van de Amstelcampus, de plek
@@ -119,7 +150,7 @@
               </p>
             </article>
             <!-- YUSU COFFEE-->
-            <article class="carousel-campus-item campus-location-card">
+            <article class="campus-card">
               <h3>YUSU COFFEE</h3>
               <p>
                 Tegenover AMFI - Het Koetsier Montaignehuis is café YUSU -
@@ -133,13 +164,10 @@
         <!-- Amstelcampus Categorie - STUDY HUBS-->
         <section class="campus-category" id="study">
           <h2>STUDY</h2>
-          <p>
-            Zoek je een plekje waar je kan studeren? Probeer deze locaties bij
-            de Amstelcampus.
-          </p>
-          <div class="carousel campus-location-card">
+          <p>Rust zonder remoer.</p>
+          <div class="carousel campus-card">
             <!-- TTH 1 - -->
-            <article class="carousel-campus-item campus-location-card">
+            <article class="campus-card">
               <img src="/assets/study-hubs/medialounge.png" />
               <h3>Theo Thijssenhuis - CMD Medialounge</h3>
               <p>
@@ -150,7 +178,7 @@
               </p>
             </article>
             <!-- JMH 1 - -->
-            <article class="carousel-campus-item campus-location-card">
+            <article class="campus-card">
               <img src="/assets/study-hubs/jmh-stilte.png" />
               <h3>Jakoba Mulderhuis - Stiltewerkplekken</h3>
               <p>
@@ -161,7 +189,7 @@
               </p>
             </article>
             <!-- KSH 1 - -->
-            <article class="carousel-campus-item campus-location-card">
+            <article class="campus-card">
               <img src="/assets/study-hubs/ksh-stilte.png" />
               <h3>Kohnstammhuis - Stiltewerkplekken</h3>
               <p>
@@ -172,7 +200,7 @@
               </p>
             </article>
             <!-- WBH 1 - -->
-            <article class="carousel-campus-item campus-location-card">
+            <article class="campus-card">
               <img src="/assets/study-hubs/wbh-stilte.png" />
               <h3>Wibauthuis - Prikkel-arm studieplekken</h3>
               <p>
