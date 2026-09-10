@@ -71,13 +71,13 @@ header {
     padding: 1em 3em;
     text-decoration: none;
     border-radius: 1em;
+    &:visited {
+      color: inherit;
+    }
     &:hover {
       transition: all 0.2s ease-in-out;
       color: var(--bg);
       background: var(--primary);
-    }
-    &:visited {
-      color: inherit;
     }
   }
   nav {
