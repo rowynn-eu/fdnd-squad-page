@@ -22,14 +22,8 @@ https://fonts.google.com/selection/embed
 
 /* display ports!! or viewports!! or media queries!!!! */
 
-@media screen and (min-width: 600px) {
-  .student-card img {
-    width: 20em;
-}
-}
-
 .student-card img {
-    width: 20em;
+  width: 15em;
 }
 
 /* SOON! After thursday*/
@@ -96,6 +90,7 @@ h1 {
   scroll-snap-stop: always;
   padding: 2em;
   scale: 1;
+
   transition: all 0.1s ease-in-out;
   &:hover {
     scale: 1.05;
@@ -105,6 +100,15 @@ h1 {
     height: auto;
     aspect-ratio: 3 / 4;
     object-fit: cover;
+    @media (min-width: 20em) {
+      width: 15em;
+    }
+    @media (min-width: 50em) {
+      width: 20em;
+    }
+    @media (min-width: 80em) {
+      width: 20em;
+    }
   }
   a {
     text-decoration: none;
@@ -127,4 +131,18 @@ h1 {
   scroll-snap-stop: always;
   padding: 1em;
   min-width: fit-content;
+
+  img {
+    height: 20em;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+  }
 }
+
+/* 
+@media (min-width: 30em) {
+  .student-card img {
+    width: 10em;
+  }
+}
+  */
