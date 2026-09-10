@@ -19,16 +19,15 @@
     </header>
 
     <!-- Inhoud van de squad page + carousel-->
-
+    <hr />
     <main>
       <!-- Carousel Studenten
       
       Ik merk snel dat de website heel langzaam duurt zoals het nu is, dus ik probeer Lazy Loading te gebruiken..
       https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/Lazy_loading
       -->
-
       <section>
-        <h1>YOUR SQUAD</h1>
+        <h1 id="squad">YOUR SQUAD</h1>
         <div class="carousel-student">
           <!-- Ahmet -->
           <article class="student-card">
@@ -295,12 +294,15 @@
 
         <!-- Studenten Carousel -->
       </section>
+      <hr />
       <!-- Artikelen Amstelcampus -->
       <section id="campus">
         <h1>YOUR CAMPUS</h1>
-        <a href="#food">Eten en drinken</a>
-        <a href="#social">Broedplaatsen</a>
-        <a href="#study">Studieplekken</a>
+        <div class="campus-buttons">
+          <a href="#food">Eten en drinken</a>
+          <a href="#social">Broedplaatsen</a>
+          <a href="#study">Studieplekken</a>
+        </div>
         <!-- Amstelcampus Categorie - FOOD JOINTS-->
         <section class="campus-category" id="food">
           <h2>FOOD</h2>
@@ -312,10 +314,8 @@
               <h3>Jakoba Mulderhuis - Café Ko</h3>
               <p>
                 Café Ko is een rustige omgeving om even pauze te houden met een
-                uitzicht op de begane grond van de Amstelcampus. De ingang is
-                rechts van de hoofdingang tot het Jakoba Mulderhuis. Bij Café Ko
-                kan je vers gebakken broodjes halen, maar ook een kopje koffie
-                of thee.
+                uitzicht op de begane grond van de Amstelcampus. De entree is
+                rechts van de hoofdingang.
               </p>
             </article>
             <!-- JMH 2 - Food Boxes -->
@@ -323,9 +323,9 @@
               <img loading="lazy" src="/assets/food-hubs/foodbox.avif" />
               <h3>Jakoba Mulderhuis - FOOD BOX</h3>
               <p>
-                In het midden van het Jakoba Mulderhuis op de begane grond zijn
-                er twee FOOD BOXES die elke dag zowel warm als koude
-                lunchmaaltijden klaar maken.
+                Naast Café Ko zijn er ook andere opties beschikbaar om eten en
+                drinken te kopen in het Jakoba Mulderhuis. Er zijn twee 'FOOD
+                BOXES' Elke dag wordt er zowel warm als koude broodjes bereid.
               </p>
             </article>
             <!-- KSH 1 - Food Shop -->
@@ -334,8 +334,8 @@
               <h3>Kohnstammhuis - KSH Food Shop</h3>
               <p>
                 In het grote vergaderruimte en broedplaats van het Kohnstammhuis
-                is er een Kiosk met de naam "FOOD SHOP" waar je vers gebakken
-                warme broodjes, snacks en drinken kan kopen.
+                is er een Kiosk met de naam "FOOD SHOP" waar je vers eten kan
+                halen, maar ook drinken kan kopen.
               </p>
             </article>
             <!-- WBH 1 - Spar -->
@@ -343,9 +343,9 @@
               <img loading="lazy" src="/assets/food-hubs/spar.avif" />
               <h3>Wibauthuis - SPAR University Shop</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet
-                consectetur adipiscing elit quisque faucibus ex. Adipiscing elit
-                quisque faucibus ex sapien vitae pellentesque.
+                In samenwerking met HvA is er een SPAR ingebouwd bij de
+                Wibauthuis waar je vers gebakken brood kan kopen, maar ook
+                andere goederen zoals je kan verwachten bij SPAR.
               </p>
             </article>
           </div>
@@ -360,9 +360,9 @@
               <img loading="lazy" src="/assets/social-hubs/bagels&beans.jpg" />
               <h3>Bagels & Beans</h3>
               <p>
-                Aan de ruyschstraat is er een Bagels & Beans, ideaal als je een
-                kopje koffie wil halen en iets wil eten dat vega(n) is of
-                glutenvrij.
+                Als je op zoek ben naar een leuke, gezellige plek met zowel
+                vega(n) als glutenvrije opties, dan is Bagels & Beans een ideale
+                plek om af te spreken.
               </p>
             </article>
             <!-- COFFEE COMPANY-->
@@ -372,9 +372,9 @@
                 src="/assets/social-hubs/coffeecompany.avif" />
               <h3>coffeecompany</h3>
               <p>
-                Direct naast de HvA Amstelcampus is er een Coffeecompany waar je
-                kan door studeren, maar uiteraard ook genieten van een iced
-                latte op het terras.
+                Aan de rand van de straat in een cozy corner is coffeecompany is
+                gevestigd. Ideaal om na de college te kletsen met je
+                studiegenoten in een plekje met minder rumoer.
               </p>
             </article>
             <!-- Cafe Fest-->
@@ -393,10 +393,9 @@
               <img loading="lazy" src="/assets/social-hubs/yusu.avif" />
               <h3>YUSU COFFEE</h3>
               <p>
-                Tegenover AMFI - Het Koetsier Montaignehuis is café YUSU -
-                afgeleid van 'seryusu' dat serieus in sranang tongo betekent.
-                YUSU is een creatief en experimenteel café waar eenieder welkom
-                is.
+                Tegenover het Koetsier Montaignehuis is café YUSU - afgeleid van
+                'seryusu' dat serieus in sranang tongo betekent. YUSU is een
+                creatief en experimenteel café waar eenieder welkom is.
               </p>
             </article>
           </div>
@@ -421,10 +420,11 @@
               <img loading="lazy" src="/assets/study-hubs/jmh.avif" />
               <h3>Jakoba Mulderhuis</h3>
               <p>
-                Zowel op de eerste verdieping in de bibliotheek tegenover de
-                foodboxen als op de zevende verdieping zijn er stiltewerkplekken
-                waar je rustig kan doorstuderen. In 07D2 is er ook nog een mooie
-                uitzicht te zien van de Amstelcampus.
+                In het Jakoba Mulderhuis zijn er <strong>twee plekken</strong>
+                waar je in stilte kan studeren. Op de eerste verdieping in het
+                bibliotheek is er een grote stilte ruimte, en op de 07D2
+                verdieping in het Techniek afdeling is er een kleinere ruimte
+                met een mooie uitzicht van Oud-Oost.
               </p>
             </article>
             <!-- KSH 1 - -->
@@ -453,15 +453,14 @@
         </section>
       </section>
     </main>
-
+    <hr />
     <!-- Footer met ontwerper gegevens van onze team -->
     <footer>
-      <sub>Mede mogelijk gemaakt door...</sub>
-      <ul>
-        <li><a href="">Rowynn Sewkaransing</a></li>
-        <li><a href="">Noey Oo</a></li>
-        <li><a href="">Emmanuel Asenso-Kusi</a></li>
-      </ul>
+      <sub
+        >Ontworpen door
+        <a href="https://www.rowynn.eu/">Rowynn Sewkarnasing</a> met kleur
+        advies van <a href="https://github.com/Noeyoo26">Noey Oo</a>...</sub
+      >
     </footer>
   </body>
 </html>
