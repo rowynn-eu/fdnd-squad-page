@@ -22,6 +22,16 @@ https://fonts.google.com/selection/embed
 
 /* display ports!! or viewports!! or media queries!!!! */
 
+@media screen and (min-width: 600px) {
+  .student-card img {
+    width: 20em;
+}
+}
+
+.student-card img {
+    width: 20em;
+}
+
 /* SOON! After thursday*/
 
 /* stylings */
@@ -38,6 +48,10 @@ header {
   align-items: center;
   justify-content: space-between;
   border: var(--primary) solid 0.25em;
+}
+
+section {
+  margin-bottom: 10%;
 }
 
 nav {
@@ -88,7 +102,6 @@ h1 {
     transition: all 0.1s ease-in-out;
   }
   img {
-    width: 20em;
     height: auto;
     aspect-ratio: 3 / 4;
     object-fit: cover;
@@ -100,6 +113,7 @@ h1 {
 
 .carousel-campus {
   display: flex;
+  gap: 10em;
   overflow-x: auto;
   overflow-y: hidden;
   anchor-name: --campus-card;
@@ -109,5 +123,8 @@ h1 {
 }
 
 .campus-card {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
   padding: 1em;
+  min-width: fit-content;
 }
