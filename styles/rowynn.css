@@ -34,9 +34,10 @@ body {
 
 header {
   display: flex;
-  padding: 0.25em;
+  padding: 0.25em 1em;
   align-items: center;
   justify-content: space-between;
+  border: var(--primary) solid 0.25em;
 }
 
 nav {
