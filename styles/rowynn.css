@@ -74,6 +74,7 @@ h1 {
   scroll-snap-type: x mandatory;
   scrollbar-color: var(--primary) var(--bg);
   text-align: center;
+  border: var(--primary) solid 0.25em;
 }
 
 .student-card {
