@@ -32,14 +32,17 @@ body {
   background: var(--bg);
 
   section {
-    margin: 10% 0;
+    margin: 5% 0;
   }
 
   h1,
   h2,
   h3,
   p,
-  a {
+  a,
+  sub,
+  ul,
+  li {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
   }
@@ -48,6 +51,7 @@ body {
   h2,
   h3 {
     color: var(--primary);
+    font-weight: 700;
   }
 
   h1 {
@@ -57,7 +61,7 @@ body {
 
 header {
   display: flex;
-  padding: 0.25em 1em;
+  padding: 0.1em 0.5em;
   align-items: center;
   justify-content: space-between;
   border: var(--primary) solid 0.25em;
@@ -68,22 +72,21 @@ header {
   position: sticky;
   top: 0.5em;
   a {
-    padding: 1em 3em;
+    padding: 1em 1em;
     text-decoration: none;
     border-radius: 1em;
     &:visited {
       color: inherit;
     }
     &:hover {
-      transition: all 0.2s ease-in-out;
+      transition: background 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
       color: var(--bg);
       background: var(--primary);
     }
   }
   nav {
     display: flex;
-    font-size: 1.25em;
-    gap: 4em;
   }
 }
 /* carousels
@@ -106,7 +109,7 @@ header {
   scroll-snap-align: center;
   scroll-snap-stop: always;
   padding: 1em;
-  transition: all 0.2s ease-in-out;
+  transition: scale 0.2s ease-in-out;
   &:hover {
     transition: all 0.2s ease-in-out;
     background: var(--primary);
@@ -120,7 +123,7 @@ header {
     object-fit: cover;
     border: var(--primary) solid 0.25em;
     @media (min-width: 20em) {
-      width: 15em;
+      width: 10em;
     }
     @media (min-width: 50em) {
       width: 20em;
@@ -128,7 +131,7 @@ header {
     @media (min-width: 80em) {
       width: 20em;
     }
-    transition: all 0.2s ease-in-out;
+    transition: scale 0.2s ease-in-out;
     &:hover {
       scale: 1.05;
       transition: all 0.2s ease-in-out;
@@ -162,6 +165,7 @@ header {
 }
 
 .campus-card {
+  display: grid;
   scroll-snap-align: center;
   scroll-snap-stop: always;
   padding: 1em;
@@ -172,16 +176,12 @@ header {
   justify-content: center;
   align-items: center;
 
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    scale: 1.025;
-    transition: all 0.2s ease-in-out;
-  }
+  transition: scale 0.2s ease-in-out;
 
   @media (min-width: 80em) {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    column-gap: 1em;
+    column-gap: 2em;
     grid-auto-flow: dense;
     img {
       grid-column-start: 1;
@@ -197,16 +197,23 @@ header {
   }
 
   img {
+    &:hover {
+      scale: 1.025;
+      transition: scale 0.2s ease-in-out;
+    }
     aspect-ratio: 4 / 3;
     object-fit: cover;
     @media (min-width: 20em) {
-      width: 15em;
-    }
-    @media (min-width: 50em) {
       width: 20em;
     }
-    @media (min-width: 80em) {
+    @media (min-width: 30em) {
+      width: 25em;
+    }
+    @media (min-width: 50em) {
       width: 30em;
+    }
+    @media (min-width: 80em) {
+      width: 35em;
     }
   }
 }
