@@ -20,51 +20,137 @@ https://fonts.google.com/selection/embed
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* display ports!! or viewports!! or media queries!!!! */
+/* stylings
 
-/* SOON! After thursday*/
+In de volgorde van de HTMl probeer ik het ook te stylen, zodat het makkelijker is te volgen voor iemand anders.
 
-/* stylings */
+Met 'body' beginnen we alle basis wijzigingen toe te passen als geneseted CSS. Met tips van Krijn en Rick.
+
+*/
 body {
   margin: 1em auto;
-  max-width: 80%;
-  color: var(--txt);
+  color: var(--accent);
   background: var(--bg);
+  section {
+    margin: 5% 0;
+  }
+
+  hr {
+    border-color: var(--secondary);
+  }
+
+  header,
+  main,
+  footer {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+  }
+
+  main > section > a {
+    padding: 1em;
+    color: var(bg);
+    background: var(--secondary);
+  }
+  h1,
+  h2,
+  h3 {
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  /* 
+  ik vraag me af of dit eigenlijk gaat werken. idk. 
+  De bedoeling is dat de sizing wordt geanimeert tijdens he resizen.
+  */
+  transition: all 0.2s ease-in-out;
+  @media (min-width: 25em) {
+    max-width: 90%;
+  }
+  @media (min-width: 50em) {
+    max-width: 80%;
+  }
+  @media (min-width: 120em) {
+    max-width: 70%;
+  }
 }
+
+/* 
+Wijzigingen voor de header. 
+*/
 
 header {
   display: flex;
-  padding: 0.25em 1em;
+  padding: 0.1em 0.5em;
   align-items: center;
   justify-content: space-between;
-  border: var(--primary) solid 0.25em;
-}
-
-nav {
-  display: flex;
-  gap: 4em;
-}
-
-h1,
-h2,
-h3,
-p,
-a {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-}
-
-h1,
-h2,
-h3 {
+  background: var(--bg);
   color: var(--primary);
+  font-weight: 700;
+  /* 
+  om het te laten zweven, maken we gebruik van 'sticky' en een 'top:' value. 
+  */
+  position: sticky;
+  top: 0.5em;
+  nav {
+    display: flex;
+    gap: 1em;
+  }
+  @media (min-width: 20em) {
+    top: 0em;
+    border: none;
+  }
 }
 
-h1 {
+/* 
+Ik heb het gevoel dat ik dit beter had kunnen stylen met een class, maar het werkt, en
+niks onnodig wordt gemaakt.
+
+*/
+header > nav > a,
+main > section > div > a {
+  text-align: center;
+  background: var(--bg);
+  color: var(--primary);
+  font-weight: 700;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  border-radius: 0.5em;
+  background: var(--secondary);
+  transition: background 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  &:visited {
+    color: inherit;
+  }
+  &:hover {
+    transition: background 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    color: var(--bg);
+    background: var(--primary);
+  }
+}
+
+/* 
+Ik heb geleerd als ik hier 'main > section > div' declareer, dat de carousel boven helemaal verkeerd gaat. */
+.campus-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0em 1em;
+}
+
+footer {
   text-align: center;
 }
+/* carousels
 
-/* carousels */
+  met feedback van Krijn probeer het ik ook binnen deze .class's te verwerken
+
+  Ik heb tips van Adam Argyle gebruikt en css-carousel
+  https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
+  
+*/
 
 .carousel-student {
   display: flex;
@@ -74,40 +160,150 @@ h1 {
   scroll-snap-type: x mandatory;
   scrollbar-color: var(--primary) var(--bg);
   text-align: center;
-  border: var(--primary) solid 0.25em;
+  scrollbar-width: thin;
 }
 
 .student-card {
   scroll-snap-align: center;
   scroll-snap-stop: always;
-  padding: 2em;
-  scale: 1;
-  transition: all 0.1s ease-in-out;
+  padding: 1em;
+  transition: scale 0.2s ease-in-out;
   &:hover {
-    scale: 1.05;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: var(--primary);
+    h2 {
+      color: var(--bg);
+    }
   }
   img {
-    width: 20em;
     height: auto;
     aspect-ratio: 3 / 4;
     object-fit: cover;
+    border: var(--primary) solid 0.25em;
+    width: 10em;
+
+    @media (min-width: 25em) {
+      width: 12.5em;
+    }
+
+    @media (min-width: 50em) {
+      width: 15em;
+    }
+    @media (min-width: 100em) {
+      width: 20em;
+    }
+    transition: scale 0.2s ease-in-out;
+    &:hover {
+      scale: 1.05;
+      transition: all 0.2s ease-in-out;
+    }
   }
   a {
     text-decoration: none;
   }
 }
 
+.campus-category {
+  h2 {
+    font-weight: 700;
+    background: var(--primary);
+    color: var(--bg);
+    padding: 0.5em 1em;
+    width: min-content;
+  }
+}
+
 .carousel-campus {
   display: flex;
+  gap: 10em;
   overflow-x: auto;
   overflow-y: hidden;
   anchor-name: --campus-card;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-color: var(--primary) var(--bg);
+  scrollbar-width: thin;
 }
 
 .campus-card {
+  display: grid;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
   padding: 1em;
+  min-width: fit-content;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: scale 0.2s ease-in-out;
+
+  @media (min-width: 80em) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2em;
+    grid-auto-flow: dense;
+    img {
+      grid-column-start: 1;
+      grid-row-start: span 2;
+    }
+    h3 {
+      grid-column-start: 2;
+      font-size: 1.5em;
+    }
+    p {
+      grid-column-start: 2;
+      grid-row-start: 2;
+      font-size: 1.25em;
+    }
+  }
+
+  img {
+    &:hover {
+      scale: 1.025;
+      transition: scale 0.2s ease-in-out;
+    }
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    width: 15em;
+    @media (min-width: 25em) {
+      width: 20em;
+    }
+    @media (min-width: 40em) {
+      width: 35em;
+    }
+    @media (min-width: 50em) {
+      width: 40em;
+    }
+    @media (min-width: 80em) {
+      width: 20em;
+    }
+  }
 }
+
+/* 
+Ik vraag me af of het mogelijk is hoe je dit het beste kan animeren, zonder dat er nogsteeds wit ruimte is met 'visbility: hidden'.
+
+Ook nieuwsgierig of het mogelijk is om specifiek, ongeacht welke #id geselecteerd is, dat 1 categorie altijd beschikbaar is.
+
+Een puzzel voor mijn digital garden, of een andere opdracht. Morgen is mijn code-review. Ik hou het hier bij.
+
+*/
+
+.campus-category {
+  display: none;
+  &:target {
+    display: block;
+  }
+}
+
+/* dit is iets wat ik had bewaard tijdens het bewerken om het responsive the krijgen.
+
+
+@media (min-width: 30em) {
+  .student-card img {
+    width: 10em;
+  }
+}
+  */
