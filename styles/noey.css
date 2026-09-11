@@ -19,20 +19,27 @@ body {
   color: var(--text-color);
   font-family: var(--font-main);
   padding: 20px;
+  padding-top:70px;
 }
 
 /* ==========================================================================
    2. NAVBAR STYLING (Editorial stijl)
    ========================================================================== */
 .navbar {
+  position: fixed; 
+  top: 0;            
+  left: 0;
+  width: 100%;
+  background-color: #c9cbff; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 15px;
+  padding: 15px 20px; /* Geef de navbar wat ademruimte rondom */
   border-bottom: 1px solid var(--text-color);
   font-size: 0.85rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  z-index: 1000;     /* Zorgt dat de navbar altijd bovenop alle foto's zweeft */
 }
 
 .navbar nav a {
@@ -76,7 +83,8 @@ body {
    ========================================================================== */
 .scroll-container {
   display: flex;
-  gap: 20px; /* Ruimte tussen de kaartjes */
+  margin-bottom: 20%;
+  gap: 20px; 
   overflow-x: auto; /* Horizontaal scrollen inschakelen */
   scroll-behavior: smooth; /* Vloeiende scroll-animatie */
   scroll-snap-type: x mandatory; /* Zorgt dat kaarten vastklipen bij het stoppen */
@@ -105,10 +113,12 @@ body {
   background-color: var(--card-bg);
   border: 1px solid var(--text-color);
   padding: 12px;
+  margin-top: 5%;
   scroll-snap-align: center; /* Centreert de kaart netjes na het scrollen */
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+    
 }
 
 /* Animatie-effect als je over een kaart zweeft */
@@ -163,4 +173,155 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   opacity: 0.5;
+}
+
+/* CAMPUS SECTIE OPMAAK */
+.campus-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid var(--text-color, #111);
+}
+
+.campus-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* FILTER KNOPPEN */
+.campus-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.campus-filters a {
+    padding: 6px 14px;
+    border: 1px solid #111;
+    text-decoration: none;
+    color: #111;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    transition: background 0.2s, color 0.2s;
+}
+
+.campus-filters a:hover {
+    background: #111;
+    color: #fff;
+}
+
+/* :TARGET LOGICA: Verberg standaard alle groepen, toon #food als startpunt */
+.campus-slide-group {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px;
+  justify-content: center;
+}
+
+.campus-slide-group:not(:target) ~ #food {
+    display: block;
+}
+
+.campus-slide-group:target {
+    display: block;
+}
+
+#campus.hero {
+  margin-top: 20%; 
+}
+
+/* ==========================================================================
+   CAMPUS SECTIE & :TARGET LOGICA
+   ========================================================================== */
+#campus {
+  margin-top: 80px;
+}
+
+/* Filter knoppen styling */
+.campus-filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.campus-filters a {
+  padding: 8px 16px;
+  border: 1px solid var(--text-color);
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.campus-filters a:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+/* :TARGET LOGICA: Standaard alle groepen verbergen, #food tonen als er geen target is */
+.campus-slide-group {
+  display: none;
+}
+
+.campus-slider-wrapper:not(:has(:target)) #food,
+.campus-slide-group:target {
+  display: block;
+}
+
+/* 2-Koloms Kaart Layout (Volgens je schets: 1fr foto, 2fr tekst) */
+.campus-card {
+  flex: 0 0 500px; /* Vaste breedte voor de brede kaart */
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 15px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--text-color);
+  padding: 14px;
+  scroll-snap-align: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.campus-card .card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Exact de verhouding uit je schets */
+  background-color: #eee;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.campus-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.campus-card:hover .card-image img {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+.campus-card .card-info h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.campus-card .card-info p {
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.4;
 }
