@@ -24,6 +24,8 @@ https://fonts.google.com/selection/embed
 
 In de volgorde van de HTMl probeer ik het ook te stylen, zodat het makkelijker is te volgen voor iemand anders.
 
+Met 'body' beginnen we alle basis wijzigingen toe te passen als geneseted CSS. Met tips van Krijn en Rick.
+
 */
 body {
   margin: 1em auto;
@@ -59,7 +61,10 @@ body {
   h1 {
     text-align: center;
   }
-  /* ik vraag me af of dit eigenlijk gaat werken. idk */
+  /* 
+  ik vraag me af of dit eigenlijk gaat werken. idk. 
+  De bedoeling is dat de sizing wordt geanimeert tijdens he resizen.
+  */
   transition: all 0.2s ease-in-out;
   @media (min-width: 25em) {
     max-width: 90%;
@@ -72,6 +77,10 @@ body {
   }
 }
 
+/* 
+Wijzigingen voor de header. 
+*/
+
 header {
   display: flex;
   padding: 0.1em 0.5em;
@@ -80,7 +89,9 @@ header {
   background: var(--bg);
   color: var(--primary);
   font-weight: 700;
-  /* om het te laten zweven */
+  /* 
+  om het te laten zweven, maken we gebruik van 'sticky' en een 'top:' value. 
+  */
   position: sticky;
   top: 0.5em;
   nav {
@@ -93,6 +104,11 @@ header {
   }
 }
 
+/* 
+Ik heb het gevoel dat ik dit beter had kunnen stylen met een class, maar het werkt, en
+niks onnodig wordt gemaakt.
+
+*/
 header > nav > a,
 main > section > div > a {
   text-align: center;
@@ -130,6 +146,10 @@ footer {
 /* carousels
 
   met feedback van Krijn probeer het ik ook binnen deze .class's te verwerken
+
+  Ik heb tips van Adam Argyle gebruikt en css-carousel
+  https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
+  
 */
 
 .carousel-student {
