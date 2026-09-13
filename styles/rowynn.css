@@ -1,11 +1,8 @@
-/* BRONNEN
-Hoe maak je CSS-only carousels? Tip van Sanne!
-- https://chrome.dev/carousel-configurator/
-- https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
-
+/* 
+Ik maak gebruik van Prettier, dus als iets lelijks wordt afgesloten dan zie ik het niet.
 */
 
-/* noey's KLEUREN PALET van maandag */
+/* Kleuren variables worden gedeclareerd */
 :root {
   --primary: #1d26be;
   --secondary: #8389eb;
@@ -15,14 +12,16 @@ Hoe maak je CSS-only carousels? Tip van Sanne!
 }
 
 /* 
-FONT van noey, geimporteerd via GOOGLE FONTS's embed code
+Fonts worden geimporteerd via Google Fonts. Gekozen door Noey Oo
 https://fonts.google.com/selection/embed
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* stylings
+/* 
 
-In de volgorde van de HTMl probeer ik het ook te stylen, zodat het makkelijker is te volgen voor iemand anders.
+Body wordt gestyled.
+
+Margin, layout, en fonts owrden hier gedeclareerd.
 
 */
 body {
@@ -42,6 +41,11 @@ body {
   footer {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
+
+    span {
+      font-size: 0.75rem;
+      vertical-align: sub;
+    }
   }
 
   main > section > a {
@@ -51,24 +55,26 @@ body {
   }
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     color: var(--primary);
     font-weight: 700;
   }
 
-  h1 {
+  h1,
+  h2 {
     text-align: center;
   }
-  /* ik vraag me af of dit eigenlijk gaat werken. idk */
-  transition: all 0.2s ease-in-out;
+
+  /*
+   Media Queries breakpoints voor verschillende schermen & Animaties.
+  */
+
   @media (min-width: 25em) {
     max-width: 90%;
   }
-  @media (min-width: 50em) {
-    max-width: 80%;
-  }
-  @media (min-width: 120em) {
-    max-width: 70%;
+  @media (min-width: 60em) {
+    max-width: 60em;
   }
 }
 
@@ -80,7 +86,11 @@ header {
   background: var(--bg);
   color: var(--primary);
   font-weight: 700;
-  /* om het te laten zweven */
+
+  /*
+  Zorgt ervoor dat de header blijft plakken bovenaan als iemand naar benden probeert te scrollen, zowel op een klein als een grote scherm.
+  */
+
   position: sticky;
   top: 0.5em;
   nav {
@@ -94,7 +104,7 @@ header {
 }
 
 header > nav > a,
-main > section > div > a {
+main > section > ul > a {
   text-align: center;
   background: var(--bg);
   color: var(--primary);
@@ -116,8 +126,6 @@ main > section > div > a {
   }
 }
 
-/* 
-Ik heb geleerd als ik hier 'main > section > div' declareer, dat de carousel boven helemaal verkeerd gaat. */
 .campus-buttons {
   display: flex;
   justify-content: center;
@@ -127,10 +135,6 @@ Ik heb geleerd als ik hier 'main > section > div' declareer, dat de carousel bov
 footer {
   text-align: center;
 }
-/* carousels
-
-  met feedback van Krijn probeer het ik ook binnen deze .class's te verwerken
-*/
 
 .carousel-student {
   display: flex;
@@ -151,7 +155,7 @@ footer {
   &:hover {
     transition: all 0.2s ease-in-out;
     background: var(--primary);
-    h2 {
+    h3 {
       color: var(--bg);
     }
   }
@@ -160,18 +164,11 @@ footer {
     aspect-ratio: 3 / 4;
     object-fit: cover;
     border: var(--primary) solid 0.25em;
-    width: 10em;
+    max-width: 15em;
+    /*
+   Media Queries breakpoints voor verschillende schermen.
+   */
 
-    @media (min-width: 25em) {
-      width: 12.5em;
-    }
-
-    @media (min-width: 50em) {
-      width: 15em;
-    }
-    @media (min-width: 100em) {
-      width: 20em;
-    }
     transition: scale 0.2s ease-in-out;
     &:hover {
       scale: 1.05;
@@ -217,8 +214,11 @@ footer {
   justify-content: center;
   align-items: center;
 
-  transition: scale 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 
+  /*
+   Media Queries breakpoints voor verschillende schermen.
+  */
   @media (min-width: 80em) {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -246,30 +246,13 @@ footer {
     }
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    width: 15em;
-    @media (min-width: 25em) {
-      width: 20em;
-    }
-    @media (min-width: 40em) {
-      width: 35em;
-    }
-    @media (min-width: 50em) {
-      width: 40em;
-    }
+    width: 50%;
+
     @media (min-width: 80em) {
-      width: 20em;
+      width: 100%;
     }
   }
 }
-
-/* 
-Ik vraag me af of het mogelijk is hoe je dit het beste kan animeren, zonder dat er nogsteeds wit ruimte is met 'visbility: hidden'.
-
-Ook nieuwsgierig of het mogelijk is om specifiek, ongeacht welke #id geselecteerd is, dat 1 categorie altijd beschikbaar is.
-
-Een puzzel voor mijn digital garden, of een andere opdracht. Morgen is mijn code-review. Ik hou het hier bij.
-
-*/
 
 .campus-category {
   display: none;
@@ -277,13 +260,3 @@ Een puzzel voor mijn digital garden, of een andere opdracht. Morgen is mijn code
     display: block;
   }
 }
-
-/* dit is iets wat ik had bewaard tijdens het bewerken om het responsive the krijgen.
-
-
-@media (min-width: 30em) {
-  .student-card img {
-    width: 10em;
-  }
-}
-  */
