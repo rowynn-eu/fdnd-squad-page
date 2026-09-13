@@ -78,6 +78,10 @@ body {
   }
 }
 
+/* 
+Wijzigingen voor de header. 
+*/
+
 header {
   display: flex;
   padding: 0.1em 0.5em;
@@ -103,6 +107,11 @@ header {
   }
 }
 
+/* 
+Ik heb het gevoel dat ik dit beter had kunnen stylen met een class, maar het werkt, en
+niks onnodig wordt gemaakt.
+
+*/
 header > nav > a,
 main > section > ul > a {
   text-align: center;
