@@ -1,0 +1,13 @@
+/* 
+Noey & Emmanuel,
+
+In dit bestand gebruiken we ROOT variables, die globaal kunnen gebruikt worden, zoals onze kleuren palet.
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root
+*/
+
+:root {
+  --primary: #1d26be;
+  --secondary: #8389eb;
+  --bg: light-dark(#f4f4f0, #282828);
+  --txt: light-dark(#282828, #f4f4f0);
+}
