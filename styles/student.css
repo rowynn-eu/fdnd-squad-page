@@ -9,3 +9,32 @@ Uitleg:
 https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
 
 */
+.carousel-student {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  anchor-name: --card-student;
+  scroll-snap-type: x proximity;
+  scroll-margin: 5em;
+  scroll-behavior: auto;
+}
+.card-student {
+  scroll-snap-align: center;
+  img {
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border: 0.25em var(--primary) solid;
+    max-height: 30svh;
+  }
+}
+
+.docent {
+  h3 {
+    color: var(--secondary);
+  }
+
+  img {
+    border: 0.25em var(--secondary) solid;
+  }
+}

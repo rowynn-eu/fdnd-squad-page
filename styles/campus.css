@@ -9,3 +9,35 @@ Uitleg:
 https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
 
 */
+
+.button-campus {
+  display: flex;
+}
+
+.category-campus {
+  h3 {
+    font-size: 2em;
+  }
+}
+
+.carousel-campus {
+  display: flex;
+  gap: 10em;
+  overflow-x: auto;
+  overflow-y: hidden;
+  anchor-name: --card-campus;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.card-campus {
+  display: grid;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  padding: 1em;
+  max-width: max-content;
+  img {
+    max-height: 100dvw;
+    width: auto;
+  }
+}

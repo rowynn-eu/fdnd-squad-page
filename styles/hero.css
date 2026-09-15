@@ -4,3 +4,8 @@ Noey & Emmanuel,
 Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen van onze nieuwe visuele hierachie, dus ik hebe het bestandje al aangemaakt. :)
 
 */
+
+.hero {
+  box-sizing: border-box;
+  min-height: 100dvh;
+}

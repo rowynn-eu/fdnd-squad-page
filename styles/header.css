@@ -9,3 +9,7 @@ Uitleg:
 https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
 
 */
+
+header {
+  border-bottom: 1px solid var(--primary);
+}
