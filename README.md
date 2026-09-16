@@ -39,11 +39,11 @@ In de `\<head>` worden zeven CSS files geladen. Het gaat over zeven local CSS fi
 
 #### BODY
 
-De structuur van de body is [HEADER](#header), [MAIN](#main) en [FOOTER](#footer).
+De structuur van de body is [HEADER](#header), [MAIN](#main) en [FOOTER](#footer). Dit is gedaan zodat het beter is voor SEO, dat het gestructueerd is op een logische reden, en ook dat het makkelijker maakt om het te integreren met toegankelijksheid tools, zoals screen-readers maar ook zoekmachines zoals Google of DuckDuckGo.
 
 ##### HEADER
 
-In de header zijn er twee `\<p>` elementen, die de wordmark FDND en het studiejaartaal toont. Daartussen is zijn er twee links in een `<\nav>` element die zorgen voor de navigatie van de twee 'pagina's' op de website.
+In de header zijn er twee `\<p>` elementen, die de wordmark FDND en het studiejaar 26/27 toont. Daartussen zijn er twee links in een `<\nav>` element die zorgen voor de navigatie van de twee 'pagina's' op de website.
 
 ##### MAIN
 
@@ -53,27 +53,28 @@ In de main staan drie sections, een section met een "hero" class dat bevat een h
 
 ## Bronnen
 
-Gridbox cheatsheet https://grid.malven.co/
-Flexbox cheatsheet https://flexbox.malven.co/
-Berry Nieskens WOHW Grid Demo (bevat keyframes & animaties) https://codepen.io/bnieskens/pen/emJOGQy
-Grid VS Flexbox https://zerotomastery.io/blog/css-grid-vs-flexbox/
-Carousels with CSS https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
-Trasnform & Transition met Sanne https://github.com/fdnd-task/css-challenges/blob/main/docs/challenge_transform.md
-Grid Challenge met Sanne https://github.com/fdnd-task/css-challenges/blob/main/docs/challenge_grid.md
-Media Query fundamentals https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Media_queries
-:target pseudo class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:target
-@import media query https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@import
-transition CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition
-@keyframes CSS at-rule https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@keyframes
-:root CSS pseudo-class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root
-scroll-behaviour CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior
-prefers-reduced-motion CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
-scroll-snap-type CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-type
-scroll-behavior CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior
-scroll-snap-align CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-align
-filter CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/filter
-box-shadow CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow
-[Bronnen vermeld bij de Leertaak Squad Page](https://github.com/fdnd-task/your-tribe-squad-page/wiki)
+- Why & When to Use Semantic HTML Elements over Divs https://www.youtube.com/watch?v=bOUhq46fd5g
+- Gridbox cheatsheet https://grid.malven.co/
+- Flexbox cheatsheet https://flexbox.malven.co/
+- Berry Nieskens WOHW Grid Demo (bevat keyframes & animaties) https://codepen.io/bnieskens/pen/emJOGQy
+- Grid VS Flexbox https://zerotomastery.io/blog/css-grid-vs-flexbox/
+- Carousels with CSS https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
+- Trasnform & Transition met Sanne https://github.com/fdnd-task/css-challenges/blob/main/docs/challenge_transform.md
+- Grid Challenge met Sanne https://github.com/fdnd-task/css-challenges/blob/main/docs/challenge_grid.md
+- Media Query fundamentals https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Media_queries
+- :target pseudo class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:target
+- @import media query https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@import
+- transition CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition
+- @keyframes CSS at-rule https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@keyframes
+- :root CSS pseudo-class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root
+- scroll-behaviour CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior
+- prefers-reduced-motion CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
+- scroll-snap-type CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-type
+- scroll-behavior CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior
+- scroll-snap-align CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-align
+- filter CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/filter
+- box-shadow CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow
+- [Bronnen vermeld bij de Leertaak Squad Page](https://github.com/fdnd-task/your-tribe-squad-page/wiki)
 
 ### Auteursrechten
 
