@@ -8,10 +8,10 @@ Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen 
 @keyframes hero-text {
   0%,
   100% {
-    transform: scale(1);
+    transform: scale(1) rotate(-1deg);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05) rotate(1deg);
   }
 }
 
@@ -24,13 +24,13 @@ Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen 
   /* grootte */
   margin-top: 1em;
   margin-bottom: 5em;
-  height: max(40em, calc(100vh - 6em - 10em));
+  height: max(40em, calc(90vh - 6em - 10em));
   padding: auto;
   box-sizing: border-box;
 
   /* kleur */
-  background: var(--bg);
-  color: var(--primary);
+  background: var(--primary);
+  color: var(--bg);
 
   /* vorm */
   border-radius: 1em;
@@ -39,5 +39,6 @@ Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen 
   /* tekst */
   h1 {
     font-size: 8svw;
+    color: var(--bg);
   }
 }

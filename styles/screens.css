@@ -28,7 +28,7 @@ body {
     https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
     */
     @media (prefers-reduced-motion: no-preference) {
-      animation: hero-text 4s ease-in-out infinite;
+      animation: hero-text 5s ease-in-out infinite;
     }
   }
 }
