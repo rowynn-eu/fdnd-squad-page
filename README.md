@@ -188,7 +188,7 @@ We maken ook gebruik van een paar hover animaties voor onze website. Afbeeldinge
 
 ```
 
-Hier wordt de :hover pseudo element selector gebruikt zodat we de mogelijkheid van een interactie kunnen weergeven aan de gebruiker. Dit heet feedforward, maar het is ook een 'affordance' dat de gebruiker kan herkennen bij andere websites dat het iets is waarop ze kunnen tikken.
+Hier wordt de :hover pseudo element selector gebruikt zodat we de mogelijkheid van een interactie kunnen weergeven aan de gebruiker. Dit heet feedforward, maar het is ook een 'affordance' dat de gebruiker kan herkennen bij andere websites dat het iets is waarop ze kunnen tikken of klikken.
 
 <img width="auto" height="400" alt="brave_aDn0lZoRVh" src="https://github.com/user-attachments/assets/cbd0e058-8111-4007-994a-c9770f92022c" />
 
@@ -222,17 +222,12 @@ De highlight van onze website is het maken en ontwerpen van een CSS-carousel.
 
 ####:Target
 
-Met de :target selector kunnen we 'tabjes navigaties' realiseren, onder andere mogelijkheden.  
+Met de `:target` selector kunnen we 'tabjes navigaties' realiseren, onder andere mogelijkheden. We gebruiken het om ervoor te zorgen dat als een html element een class heeft van `category-campus`, dat we het 'verbergen' met `display: none;`. We geven dan ook de parent element een `scroll-margin-top:` van `30svh` (een viewport waarde in de hoogte, dat de kleinste gedeelte van een browser neemt zonder andere elementen mee te nemen). Daarna, met `:target`, zeggen wij dat het weer terug tevoorschijn moet komen, maar de hoogte moet wel passen binnen de content.
 
 
 ```css
 .category-campus {
   display: none;
-  /* 
-  scroll-margin-top zorgt ervoor dat het mninder 'springt' terwijl je aan het navigeren ben in het menu, zonder dat we JS hoeven toe te voegen dat scrollY aanpast.
-  https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-margin-top
-  https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY
-  */
   scroll-margin-top: 30svh;
 
   h3 {
@@ -265,7 +260,7 @@ CSS
 - :root CSS pseudo-class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root
 - Media Query fundamentals https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Media_queries
 - @import media query https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@import
-- - :target pseudo class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:target
+- :target pseudo class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:target
 - prefers-reduced-motion CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
 - transition CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition
 - @keyframes CSS at-rule https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@keyframes
@@ -279,6 +274,10 @@ CSS
 - grid-area CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-area
 - grid-template CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template
 - z-index CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/z-index
+- min-content https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/min-content
+- fit-content https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/fit-content
+- max-content https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/fit-content
+- default viewport units https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length#default_viewport_units
 
 Auteursrechten
 - Fotos van squadmates: Gekoppelde Visitekaartjes, maar ook die gedeeld zijn via MS Teams.
