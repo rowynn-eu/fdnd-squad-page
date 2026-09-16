@@ -12,6 +12,7 @@ https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
 
 header {
   /* Layout */
+  z-index: 1;
   display: flex;
   margin: 0em auto;
   padding: 0.1em 0.5em;
