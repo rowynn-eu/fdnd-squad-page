@@ -220,8 +220,30 @@ Hier wordt de :hover pseudo element selector gebruikt zodat we de mogelijkheid v
 
 De highlight van onze website is het maken en ontwerpen van een CSS-carousel. 
 
-#### :target
+####:Target
 
+Met de :target selector kunnen we 'tabjes navigaties' realiseren, onder andere mogelijkheden.  
+
+
+```css
+.category-campus {
+  display: none;
+  /* 
+  scroll-margin-top zorgt ervoor dat het mninder 'springt' terwijl je aan het navigeren ben in het menu, zonder dat we JS hoeven toe te voegen dat scrollY aanpast.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-margin-top
+  https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY
+  */
+  scroll-margin-top: 30svh;
+
+  h3 {
+    text-align: left;
+  }
+  &:target {
+    display: block;
+    height: fit-content;
+  }
+}
+```
 
 ## Bronnen
 
@@ -251,11 +273,12 @@ CSS
 - scroll-snap-type CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-type
 - scroll-behavior CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior
 - scroll-snap-align CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-align
+- scroll-margin-top CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-margin-top
 - filter CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/filter
 - box-shadow CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow
-- grid-area https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-area
-- grid-template https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template
-- z-index https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/z-index
+- grid-area CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-area
+- grid-template CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template
+- z-index CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/z-index
 
 Auteursrechten
 - Fotos van squadmates: Gekoppelde Visitekaartjes, maar ook die gedeeld zijn via MS Teams.
