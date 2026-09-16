@@ -38,7 +38,7 @@ Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen 
 
   /* tekst */
   h1 {
-    font-size: 8svw;
+    font-size: 6svh;
     color: var(--bg);
   }
 }
