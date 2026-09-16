@@ -36,6 +36,7 @@ Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen 
   margin-top: 1em;
   margin-bottom: 5em;
   height: max(40em, calc(100vh - 6em - 10em));
+  padding: auto;
   box-sizing: border-box;
 
   /* kleur */
