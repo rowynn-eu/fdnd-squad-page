@@ -14,7 +14,7 @@ Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen 
   height: max(40em, calc(100vh - 6em - 10em));
   box-sizing: border-box;
   h1 {
-    font-size: 3em;
+    font-size: 5em;
     color: var(--bg);
   }
 }
