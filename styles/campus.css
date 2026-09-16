@@ -63,13 +63,13 @@ img[src="../assets/amstel.avif"] {
     width: auto;
   }
 
-  /* Response Layout for Large Screesn */
+  /* Response Layout for Large Screens */
   @media (min-width: 60em) {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
-      "img title"
-      "img text";
+      "img titel"
+      "img tekst";
     column-gap: 2em;
 
     a,
@@ -79,12 +79,12 @@ img[src="../assets/amstel.avif"] {
       align-self: stretch;
     }
     h3 {
-      grid-area: title;
+      grid-area: titel;
       font-size: 1.5em;
       align-self: end;
     }
     p {
-      grid-area: text;
+      grid-area: tekst;
       font-size: 1.25em;
     }
   }
