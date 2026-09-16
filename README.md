@@ -137,10 +137,23 @@ De CSS selectors, properties, en at-rules hebben we gesplitst in zeven documente
 #### @Media Queries
 We maken gebruik van media queries in de `screens.css` bestand, omdat het de one-column/mobile-first ontwerp om tovert naar een desktop-friendly layout, maar ook om aan te geven dat [animaties](#animaties) niet hoeven af te spelen als de gebruiker geen animaties wilt zien. Dit doen we met `@media` breakpoints. De belangrijkste media query is die we gebruiken voor grote schermen, zodat als het een bepaalde breedte heeft, dat als de scherm groter is dan `60em` (ongv. `960px` als de element lettertype `16px` is), de campus-carousel een grid-layout gebruikt waar het plaatje de meeste ruimte gebruikt van de linker kolom, en de koptekst en paragraaf de rechter kolom.
 
-<img width="1023" height="778" alt="brave_00LTpzjev5" src="https://github.com/user-attachments/assets/db95327b-2fec-4e2f-9e04-f69d308afd21" />
+<img width="auto" height="400" alt="brave_00LTpzjev5" src="https://github.com/user-attachments/assets/db95327b-2fec-4e2f-9e04-f69d308afd21" />
 
 #### Fonts
+<img width="auto" height="200" alt="image" src="https://github.com/user-attachments/assets/d9155055-de94-43ed-bbf7-d28e2e6bf623" />  
+We hebben gekozen voor de Montserrat `sans serif` lettertype ontworpen door Julieta Ulanovsky, omdat het een geometrische, moderne look geeft. We laden dit in CSS met een `@import` at-rule in onze `main.css` bestand. Zo wordt het extern geladen via Google Fonts, en kunnen we het een variable geven in onze `:root` pseudo-class, zodat als we de lettertype willen veranderen, kunnen wij het met één regel doen.
 
+```css
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+--font: "Montserrat", sans-serif;
+}
+
+body {
+font-family: var(--font);
+}
+```
 #### Animaties
 
 #### @Keyframes
