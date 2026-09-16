@@ -64,23 +64,27 @@ De tweede en derde sections hebben ook een ID selector. Dit zorgt ervoor dat de 
 
 ```html
 <section id="squad"> <!-- Verwijst naar een <section> element met de ID id="squad" -->
-<section id="campus"> <!-- Verwijst naar een <section> element met de ID id="campus" -->
+<section id="campus"> <!-- etc. -->
 ```
 
-De tweede `<section>` bevat alle visitekaartjes van de studenten en docenten. Ze zijn geformatteerd op een bepaalde manier, en allemaal genested in een UL, dat een `class="carousel-student` attribute heeft, dat we gaan gebruiken voor de [CSS-carousel](#CSS-Carousel). Bekijk de comments hieronder.
+De tweede `<section>` bevat alle visitekaartjes van de studenten en docenten. Ze zijn geformatteerd op een bepaalde manier, en allemaal genested in een `<ul>` element, een 'unsorted list', dat een `class="carousel-student` attribute heeft, dat we gaan gebruiken voor de [CSS-carousel](#CSS-Carousel). Bekijk de comments hieronder.
 
 ```html
-<!-- Roepnaam van de student/docent -->
-<ul class="card-student"> <!-- Geeft het de class="card-student" zodat we het kunnen stylen met CSS. -->
-  <a href="studentennaam.com/your-tribe-profile-card/" target="_blank" title="Naam van de student">
-    <img loading="lazy" src="./assets/students/naam.avif" />
-    <h3>Volledige naam van de student</h3>
-  </a>
+<ul class="carousel-student"> <!-- Class gekregen zodat we het kunnen stijlen met een cSS-carousel. -->
+  ... <!-- Meer personen in een ul'tje... -->
+    <!-- Roepnaam van de student/docent -->
+    <ul class="card-student"> <!-- Geeft het de class="card-student" zodat we het kunnen stylen met CSS. -->
+      <a href="studentennaam.com/your-tribe-profile-card/" target="_blank" title="Naam van de student">
+        <img loading="lazy" src="./assets/students/naam.avif" />
+        <h3>Volledige naam van de student</h3>
+      </a>
+    </ul>
+  ... <!-- Meer personen in een ul'tje... -->
 </ul>
 ```
 
 
-Net als de vorige, de derde `<section>`, maakt ook gebruik van ID selectors (`#campus`) zodat we interactie kunnen toevoegen aan onze website met 'tabjes navigatie', die we combineren met de css pseudo selector [:target](#:target). 
+Net als de vorige, de derde `<section>`, maakt ook gebruik van ID selectors (`#campus`) zodat we interactie kunnen toevoegen aan onze website samen met CSS zodat we 'tabjes navigatie' hebben, die we mogelijk kunnen maken door deze ID selectors te gebruiken met de css pseudo selector [:target](#:target). We geven deze `<a>` linkjes ook een class, door het te nesten onder een `<ul>` element zodat we ze kunnen vormgeven met CSS.
 
 ```html
 <h3>KNOW YOUR CAMPUS</h3>
@@ -91,6 +95,30 @@ Net als de vorige, de derde `<section>`, maakt ook gebruik van ID selectors (`#c
 </ul>
 ```
 
+Dat is omdat `#food`, `#social` en `#study` verwijzen naar een section met een `class=category-campus` CSS class selector, waar we later CSS properties aan kunnen toevoegen om een 'tabjes navigatie' interactie te realiseren.
+```html
+...
+<section class="category-campus" id="food">
+...
+<section class="category-campus" id="social">
+...
+<section class="category-campus" id="study">
+
+```
+
+Binnen elke section met de `class=category-campus` attribute is er een `<article>` tag, omdat elke stukje van onze HTML hier een los element is dat ook kan gebruikt worden in andere contexten, zoals een news pagina, een andere website die ook over de Amstelcampus gaat, of iets dergelijks waar het logisch erbij hoort. Dit hebben we niet gedaan met de studenten/docenten section, omdat los, zou het gek zijn als je een photo met een linkje naar iemands visitekaartje zou vinden die deel zijn van een 'squad'. De hele context van onze pagina ontbreekt dan. Elke article krijgt ook een `class="card-campus"` zodat we het kunnen stylen met CSS.
+
+```html
+<article class="card-campus">
+  <img loading="lazy" src="./assets/study-hubs/tth.avif" /> <!-- Local Link naar de foto van de locatie. -->
+  <h3>Theo Thijssenhuis</h3>  <!-- Titel van de locatie. -->
+  <p> <!-- Omschrijving. Bla bla bla... -->
+    Op de 3e verdieping vind je de Medialounge van onze zusteropleiding Communication & Multimedia Design
+    (CMD). Als FDND'er ben je hier natuurlijk helemaal welkom om samen met deze designers te duiken in je
+    projecten.
+  </p>
+</article>
+```
 
 ##### FOOTER
 
@@ -114,6 +142,8 @@ Net als de vorige, de derde `<section>`, maakt ook gebruik van ID selectors (`#c
 
 ## Bronnen
 
+Typografie
+“Montserrat - Google Fonts,” Google Fonts. https://fonts.google.com/specimen/Montserrat
 
 HTML
 - Why & When to Use Semantic HTML Elements over Divs https://www.youtube.com/watch?v=bOUhq46fd5g
