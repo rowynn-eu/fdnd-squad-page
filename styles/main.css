@@ -66,4 +66,11 @@ body {
     color: var(--primary);
     font-weight: 700;
   }
+
+  a {
+    color: var(--primary);
+    &:visited {
+      color: var(--primary);
+    }
+  }
 }
