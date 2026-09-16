@@ -6,6 +6,15 @@ Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen 
 */
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--primary);
+  color: var(--bg);
+  height: max(40em, calc(100vh - 6em - 10em));
   box-sizing: border-box;
-  min-height: 100dvh;
+  h1 {
+    font-size: 3em;
+    color: var(--bg);
+  }
 }

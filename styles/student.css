@@ -15,7 +15,6 @@ https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
   overflow-y: hidden;
   anchor-name: --card-student;
   scroll-snap-type: x proximity;
-  scroll-margin: 5em;
   scroll-behavior: auto;
 }
 .card-student {

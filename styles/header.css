@@ -13,11 +13,18 @@ https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
 header {
   /* Layout */
   display: flex;
+  margin: 0em auto;
   padding: 0.1em 0.5em;
+  background: var(--bg);
   align-items: center;
   justify-content: space-between;
-
   font-weight: 700;
+
+  position: sticky;
+  top: 0.5em;
+
+  /* Vormgeving */
+
   border-bottom: 0.2em solid var(--primary);
 
   nav {

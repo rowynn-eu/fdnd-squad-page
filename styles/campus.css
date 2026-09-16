@@ -12,9 +12,12 @@ https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
 
 img[src="../assets/amstel.avif"] {
   aspect-ratio: 4/3;
-  object-fit: cover;
-  max-height: 30%;
-  width: auto;
+  object-fit: center;
+  max-width: 90svw;
+  margin: auto;
+  @media (min-width: 60em) {
+    max-width: 70svh;
+  }
 }
 
 /* Carousel ID selector knoppen */
