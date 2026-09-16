@@ -75,12 +75,12 @@ section[id="campus"] > h3 {
 /* Campus Carousel Parent */
 .carousel-campus {
   display: flex;
-  gap: 10em;
   overflow-x: auto;
   overflow-y: hidden;
   anchor-name: --card-campus;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  gap: 10em;
 }
 
 /* Campus Kaartjes */
