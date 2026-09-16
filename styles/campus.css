@@ -37,6 +37,7 @@ section[id="campus"] > h3 {
     font-weight: 700;
     padding: 0.5em 0.5em;
     text-decoration: none;
+    border: 0.2em solid var(--primary);
     border-radius: 0.5em;
     &:visited {
       color: var(--bg);
