@@ -142,7 +142,7 @@ We maken gebruik van media queries in de `screens.css` bestand, omdat het de one
 <img width="auto" height="400" alt="brave_00LTpzjev5" src="https://github.com/user-attachments/assets/db95327b-2fec-4e2f-9e04-f69d308afd21" />
   
 #### Fonts
-<img width="auto" height="200" alt="image" src="https://github.com/user-attachments/assets/d9155055-de94-43ed-bbf7-d28e2e6bf623" />  
+<img width="auto" height="400" alt="image" src="https://github.com/user-attachments/assets/d9155055-de94-43ed-bbf7-d28e2e6bf623" />  
   
 We hebben gekozen voor de Montserrat `sans serif` lettertype ontworpen door Julieta Ulanovsky, omdat het een geometrische, moderne look geeft. We laden dit in CSS met een `@import` at-rule in onze `main.css` bestand. Zo wordt het extern geladen via Google Fonts, en kunnen we het een variable geven in onze `:root` pseudo-class, zodat als we de lettertype willen veranderen, kunnen wij het met één regel doen.
 
@@ -158,8 +158,61 @@ font-family: var(--font);
 }
 ```
 #### Animaties
+In de `hero.css` hebben we een animatie waar we een `@keyframes` at-rule gebruiken om de hero-splash een zwevende gevoel te geven en als een introduce tot onze pagina.  
 
-#### @Keyframes
+We maken ook gebruik van een paar hover animaties voor onze website. Afbeeldingen met hun code kan je onder bekijken. Voor de hero-splash maken we ook gebruik van `@prefers-reduced motion: no-preference` om als default geen animatie weer te geven, maar als de gebruiker geen voorkeur heeft om ze dan wel toe te passen.
+
+<img width="auto" height="400" alt="brave_NGaz6QKs03" src="https://github.com/user-attachments/assets/bdfcb911-d5fe-41be-abf1-4887186884f8" />
+  
+```css
+/* hero.css */
+@keyframes hero-text {
+  0%,
+  100% {
+    transform: scale(1) rotate(-1deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(1deg);
+  }
+}
+
+/* screens.css */
+
+.hero {
+  h1 {
+    @media (prefers-reduced-motion: no-preference) {
+      animation: hero-text 5s ease-in-out infinite;
+    }
+  }
+}
+
+```
+
+<img width="auto" height="400" alt="brave_aDn0lZoRVh" src="https://github.com/user-attachments/assets/cbd0e058-8111-4007-994a-c9770f92022c" />
+
+```css
+.button-campus {
+  a {
+    background: var(--primary);
+    color: var(--bg);
+    font-weight: 700;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    &:visited {
+      color: var(--bg);
+    }
+    &:hover {
+      color: var(--color);
+      background: var(--bg);
+      transition:
+        background 0.25s ease-in-out,
+        color 0.25s ease-in-out,
+        border 0.25s ease-in-out;
+    }
+  }
+}
+```
 
 #### CSS-Carousel
 
@@ -167,7 +220,7 @@ font-family: var(--font);
 
 #### :hover
 
-#### :focus-visible
+#### :target
 
 ## Bronnen
 
@@ -201,6 +254,7 @@ CSS
 - box-shadow CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow
 - grid-area https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-area
 - grid-template https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template
+- z-index https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/z-index
 
 Auteursrechten
 - Fotos van squadmates: Gekoppelde Visitekaartjes, maar ook die gedeeld zijn via MS Teams.
