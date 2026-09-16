@@ -24,6 +24,7 @@ Hier wordt Montserrat geimporteerd, zoals bepaald door onze 'huisstijl' van vori
   /* color-scheme: light dark; */
   --primary: #1d26be;
   --secondary: #0c0f45;
+  --tertiary: #8389eb;
   --bg: light-dark(#f4f4f0, #282828);
   --txt: light-dark(#282828, #f4f4f0);
   --font: "Montserrat", sans-serif;

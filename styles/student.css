@@ -19,12 +19,18 @@ https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
 }
 .card-student {
   scroll-snap-align: center;
+  /* img wijzigingen */
   img {
     height: auto;
     aspect-ratio: 3/4;
     object-fit: cover;
     border: 0.25em var(--primary) solid;
     max-height: 30svh;
+    filter: grayscale(500%);
+    /* hover wijzigingen */
+    &:hover {
+      filter: grayscale(0%);
+    }
   }
 }
 
