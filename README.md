@@ -59,8 +59,9 @@ Media Query fundamentals https://developer.mozilla.org/en-US/docs/Learn_web_deve
 @import media query https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@import
 transition CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition
 @keyframes CSS at-rule https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@keyframes
-:root CSS speduo-class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root
-scroll-behaviour https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior
+:root CSS pseudo-class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root
+scroll-behaviour CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior
+prefers-reduced-motion CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
 
 [Bronnen vermeld bij de Leertaak Squad Page](https://github.com/fdnd-task/your-tribe-squad-page/wiki)
 
