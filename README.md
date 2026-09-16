@@ -25,7 +25,7 @@ We hebben hier de basis structuur van het HTML bestand waar stap voor stap wordt
 
 #### HEAD
 
-In de `\<head>` worden zeven CSS files geladen. Het gaat over zeven local CSS files met specifieke styling voor de pagina, opgesplitst op deze manier zodat het makkelijker is om samen te werken in teamsverband.
+In de `<head>` worden zeven CSS files geladen. Het gaat over zeven local CSS files met specifieke styling voor de pagina, opgesplitst op deze manier zodat het makkelijker is om samen te werken in teamsverband.
 
 ```html
 <link rel="stylesheet" href="./styles/screens.css" />
@@ -43,17 +43,42 @@ De structuur van de body is [HEADER](#header), [MAIN](#main) en [FOOTER](#footer
 
 ##### HEADER
 
-In de header zijn er twee `\<p>` elementen, die de wordmark FDND en het studiejaar 26/27 toont. Daartussen zijn er twee links in een `<\nav>` element die zorgen voor de navigatie van de twee 'pagina's' op de website.
+In de header zijn er twee `<p>` elementen, die de wordmark FDND en het studiejaar 26/27 toont. Daartussen zijn er twee links `(<a>)` in een `<nav>` element die zorgen voor de navigatie van de twee 'pagina's' op de website. Dit is mogelijk vanwege de ``href=#`` waar de linkjes naar verwijst, en die verwijzen naar twee sections van de hoofd-inhoud van onze pagina.
+
+```html
+<header>
+  <p>FDND</p>
+  <nav>
+    <a href="#squad"> SQUAD </a>
+    <a href="#campus"> CAMPUS </a>
+  </nav>
+  <p>26/27</p>
+</header>
+```
 
 ##### MAIN
 
-In de main staan drie sections, een section met een "hero" class dat bevat een h1 titel, een strong element om te benadrukken waarover deze website gaat, en paragraaf met een Call to Action. De tweede section bevat informatie over de studenten en docenten in een ul wat een lijst van linkjes is en verwijst naar de visitekaartjes van eenieder.
+In de main staan drie sections, een section met een "hero" class dat bevat een `<h1>` titel, een `<strong>` element om te benadrukken waarover deze website gaat, en een paragraaf `(p)`. De tweede section bevat informatie over de studenten en docenten in een `<ul>` wat een lijst van linkjes is en verwijst naar de visitekaartjes van eenieder.
+
+De tweede en derde sections hebben een ID selector.
+
+```html
+<section id="squad">
+<section id="campus">
+```
+
+
 
 ##### FOOTER
 
 ## Bronnen
 
+
+HTML
 - Why & When to Use Semantic HTML Elements over Divs https://www.youtube.com/watch?v=bOUhq46fd5g
+- [Bronnen vermeld bij de Leertaak Squad Page](https://github.com/fdnd-task/your-tribe-squad-page/wiki)
+
+CSS
 - Gridbox cheatsheet https://grid.malven.co/
 - Flexbox cheatsheet https://flexbox.malven.co/
 - Berry Nieskens WOHW Grid Demo (bevat keyframes & animaties) https://codepen.io/bnieskens/pen/emJOGQy
@@ -74,30 +99,19 @@ In de main staan drie sections, een section met een "hero" class dat bevat een h
 - scroll-snap-align CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-align
 - filter CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/filter
 - box-shadow CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow
-- [Bronnen vermeld bij de Leertaak Squad Page](https://github.com/fdnd-task/your-tribe-squad-page/wiki)
 
-### Auteursrechten
-
-Fotos van squadmates
-Gekoppelde Visitekaartjes, maar ook die gedeeld zijn via MS Teams.
-
-Fotos van de Amstelcampus
-HvanA, “HvanA tipt: de beste (en minder goede) studieplekken van de HvA,” HvanA, Jan. 20, 2020. [Online]. Available: https://hvana.nl/nieuws/hvana-tipt-de-beste-en-minder-goede-studieplekken-van-de-hva
-
-Foto van Joost Faber
-“Agency Frontend Design & Development | Leerbedrijf voor mbo | HvA.” https://www.hva.nl/nieuws/2026/3/fdnd-agency-leren-werken-alsof-je-al-het-werkveld-zit
-
-Foto van Sanne 't Hooft
-Github profiel https://github.com/shooft
-
-Overige Fotos
-Rowynn Sewkaransing, eigen werk
+Auteursrechten
+- Fotos van squadmates: Gekoppelde Visitekaartjes, maar ook die gedeeld zijn via MS Teams.
+- Fotos van de Amstelcampus: HvanA, “HvanA tipt: de beste (en minder goede) studieplekken van de HvA,” HvanA, Jan. 20, 2020. [Online]. Available: https://hvana.nl/nieuws/hvana-tipt-de-beste-en-minder-goede-studieplekken-van-de-hva
+- Foto van Joost Faber: “Agency Frontend Design & Development | Leerbedrijf voor mbo | HvA.” https://www.hva.nl/nieuws/2026/3/fdnd-agency-leren-werken-alsof-je-al-het-werkveld-zit
+- Foto van Sanne 't Hooft: Github profiel https://github.com/shooft
+- Overige Fotos: Rowynn Sewkaransing, eigen werk
 
 ## Team
 
-[Rowynn Sewkaransing](https://github.com/rowynn-eu)
-[Noey Oo](https://github.com/Noeyoo26)
-[Emmanuel Asenso-kusi](https://github.com/emmatje)
+- [Rowynn Sewkaransing](https://github.com/rowynn-eu)
+- [Noey Oo](https://github.com/Noeyoo26)
+- [Emmanuel Asenso-kusi](https://github.com/emmatje)
 
 ## Licentie
 
