@@ -1,8 +1,10 @@
 # Squad page FDND
 
+## Inhoudsopgave
+
 ## Beschrijving
 
-We hebben we een squad page gemaakt dat onze 'squad' hoort te representeren. Het verwijst naar het visitekaartje van eenieder die deel is van onze squad (studenten en docenten), met ook informatie over de amstelcapus.
+We hebben in een team en squad page gemaakt dat onze 'squad' hoort te representeren. Het verwijst naar het visitekaartje van eenieder die deel is van onze squad (studenten en docenten), met ook informatie over de amstelcapus.
 
 Wat vind je op de pagina?
 
@@ -10,6 +12,12 @@ Wat vind je op de pagina?
 - De Amstelcampus Gids: Naast onze persoonlijke profielen vind je op de pagina relevante en handige informatie over de Amstelcampus. Hiermee verbinden we onze persoonlijke identiteit als studenten direct aan de fysieke omgeving waarin we samenwerken en studeren.
 
 Live link naar onze webpage: https://edu.nl/e8nq8
+
+## Gebruik
+
+## Kenmerken
+
+## Bronnen
 
 <!--De instructie van deze leertaak staan in de [INSTRUCTIONS](https://github.com/fdnd-task/your-tribe-squad-page/blob/main/docs/INSTRUCTIONS.md)-->
 
