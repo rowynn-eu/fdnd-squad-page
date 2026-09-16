@@ -18,6 +18,10 @@ img[src="../assets/amstel.avif"] {
   border-radius: 0.5em;
 }
 
+section[id="campus"] > h3 {
+  margin-top: 5em;
+}
+
 /* Carousel ID selector knoppen */
 .button-campus {
   display: flex;

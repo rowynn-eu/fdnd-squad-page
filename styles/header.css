@@ -28,9 +28,8 @@ header {
   /* Vormgeving */
   a {
     text-decoration: none;
-    &:visited {
-      color: var(--primary);
-    }
+    padding: 1em;
+    margin: 0em;
   }
 
   border-bottom: 0.2em solid var(--primary);
