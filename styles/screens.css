@@ -28,16 +28,8 @@ body {
     https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
     */
     @media (prefers-reduced-motion: no-preference) {
-      animation:
-        hero-text 4s ease-in-out infinite,
-        hero-fill 1s ease-in forwards;
+      animation: hero-text 4s ease-in-out infinite;
     }
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    animation-name: hero-fill;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
   }
 }
 

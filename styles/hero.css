@@ -8,21 +8,10 @@ Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen 
 @keyframes hero-text {
   0%,
   100% {
-    transform: rotate(-3deg);
+    transform: scale(1);
   }
   50% {
-    transform: rotate(3deg);
-  }
-}
-
-@keyframes hero-fill {
-  from {
-    background: var(--bg);
-    color: var(--primary);
-  }
-  to {
-    background: var(--primary);
-    color: var(--bg);
+    transform: scale(1.1);
   }
 }
 
@@ -49,6 +38,6 @@ Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen 
 
   /* tekst */
   h1 {
-    font-size: 5em;
+    font-size: 8svw;
   }
 }
