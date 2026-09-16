@@ -2,6 +2,12 @@
 
 ## Inhoudsopgave
 
+  * [Beschrijving](#beschrijving)
+  * [Gebruik](#gebruik)
+  * [Kenmerken](#kenmerken)
+  * [Bronnen](#bronnen)
+  * [Licentie](#licentie)
+
 ## Beschrijving
 
 We hebben in een team en squad page gemaakt dat onze 'squad' hoort te representeren. Het verwijst naar het visitekaartje van eenieder die deel is van onze squad (studenten en docenten), met ook informatie over de amstelcapus.
@@ -43,7 +49,7 @@ De structuur van de body is [HEADER](#header), [MAIN](#main) en [FOOTER](#footer
 
 ##### HEADER
 
-In de header zijn er twee `<p>` elementen, die de wordmark FDND en het studiejaar 26/27 toont. Daartussen zijn er twee links `(<a>)` in een `<nav>` element die zorgen voor de navigatie van de twee 'pagina's' op de website. Dit is mogelijk vanwege de ``href=#`` waar de linkjes naar verwijst, en die verwijzen naar twee sections van de hoofd-inhoud van onze pagina. Dit zorgt voor interactie zonder JavaScript (JS) te gebruiken.
+In de header zijn er twee `<p>` elementen, die de wordmark FDND en het studiejaar 26/27 toont. Daartussen zijn er twee links `(<a>)` in een `<nav>` element die zorgen voor de navigatie van de twee 'pagina's' op de website. We kiezen voor `<nav>` hier omdat het de navigatie van de website bepaald. Dit is mogelijk vanwege de ``href=#`` HTML attribute, die ervoor zorgen dat ze verwijzen naar twee specifieke `<section>`'s van de hoofd-inhoud van onze pagina. Dit zorgt voor interactie zonder JavaScript (JS) te gebruiken.
 
 ```html
 <header>
@@ -106,7 +112,7 @@ Dat is omdat `#food`, `#social` en `#study` verwijzen naar een section met een `
 
 ```
 
-Binnen elke section met de `class=category-campus` attribute is er een `<article>` tag, omdat elke stukje van onze HTML hier een los element is dat ook kan gebruikt worden in andere contexten, zoals een news pagina, een andere website die ook over de Amstelcampus gaat, of iets dergelijks waar het logisch erbij hoort. Dit hebben we niet gedaan met de studenten/docenten section, omdat los, zou het gek zijn als je een photo met een linkje naar iemands visitekaartje zou vinden die deel zijn van een 'squad'. De hele context van onze pagina ontbreekt dan. Elke article krijgt ook een `class="card-campus"` zodat we het kunnen stylen met CSS.
+Binnen elke section met de `class=category-campus` attribute is er een `<article>` tag, omdat de content wat erin zit ook op een logische manier bij andere plaatsen kan gebruikt worden, zoals een algemene amstelcampus pagina, een pagina van de HvA, of een pagina in de omgveing van wibautstraat/weesperplein. Dit hebben we niet gedaan met de studenten/docenten `<section>`, omdat en niet logisch is om de visitekaartjes of foto diegene die het heeft gemaakt in een andere context, omdat ze behoren tot de onderwerp 'een squad page'. Elke `<article>` krijgt ook een `class="card-campus"` zodat we het kunnen stylen met CSS.
 
 ```html
 <article class="card-campus">
@@ -122,9 +128,14 @@ Binnen elke section met de `class=category-campus` attribute is er een `<article
 
 ##### FOOTER
 
+In de `<footer>` is er een paragraaf dat aangeeft welke personen deel hebben gemaakt aan het ontwerpen van de website pagina, en ook nog een `<ul>` in kleine letters dat verwijst naar de oude versies van de squad-page zodat de gebruiker kan vergelijken hoe de eerste eruit zag, en wat het eindproduct is geworden.
+
 ### CSS
 
+De CSS selectors, properties, en at-rules hebben we gesplitst in zeven documenten. Zoals eerder aangegeven hebben we dit gedaan zodat het makkelijker is te werken in verschillende documenten, en dat we ook notities kunnen schrijven voor andere wat alles precies doet en waar. Dit hebben proberen te doen op een logische manier. `campus.css` bevat alle CSS wat over de amstelcampus betreft, ``footer.css`` bevat alle styling dat toegepast wordt aan de `<footer>`, etc etc. In die bestanden zijn er een aantal leuke ontwerpkeuzes gemaakt die we hier gaan bespreken. 
+
 #### @Media Queries
+We maken gebruik van media queries in de `screens.css` bestand, omdat het de one-column/mobile-first ontwerp om tovert naar een desktop-friendly layout, maar ook om aan te geven dat [animaties](#animaties) niet hoeven af te spelen als de gebruiker geen animaties wilt zien. Dit doen we met `@media` breakpoints. De belangrijkste media query is die we gebruiken voor grote schermen, zodat als het een bepaalde breedte heeft, dat als de scherm groter is dan `60em` (ongv. `960px` als de element lettertype `16px` is), de campus-carousel een grid-layout gebruikt
 
 #### Fonts
 
@@ -157,20 +168,21 @@ CSS
 - Carousels with CSS https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
 - Trasnform & Transition met Sanne https://github.com/fdnd-task/css-challenges/blob/main/docs/challenge_transform.md
 - Grid Challenge met Sanne https://github.com/fdnd-task/css-challenges/blob/main/docs/challenge_grid.md
+- :root CSS pseudo-class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root
 - Media Query fundamentals https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Media_queries
-- :target pseudo class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:target
 - @import media query https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@import
+- - :target pseudo class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:target
+- prefers-reduced-motion CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
 - transition CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition
 - @keyframes CSS at-rule https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@keyframes
-- :root CSS pseudo-class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root
 - scroll-behaviour CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior
-- prefers-reduced-motion CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
 - scroll-snap-type CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-type
 - scroll-behavior CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior
 - scroll-snap-align CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-align
 - filter CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/filter
 - box-shadow CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow
-- :focus-visible https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible
+- grid-area https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-area
+- grid-template https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template
 
 Auteursrechten
 - Fotos van squadmates: Gekoppelde Visitekaartjes, maar ook die gedeeld zijn via MS Teams.
