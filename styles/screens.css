@@ -33,9 +33,9 @@ body {
   }
 }
 
-img[src="../assets/amstel.avif"] {
+img[src="./assets/amstel.avif"] {
   @media (min-width: 60em) {
-    max-width: 70svh;
+    width: 60svh;
   }
 }
 

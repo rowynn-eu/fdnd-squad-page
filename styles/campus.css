@@ -30,8 +30,7 @@ section[id="campus"] > h3 {
   padding-left: 0;
   transition:
     background 0.2s ease-in-out,
-    color 0.2s ease-in-out,
-    border 0.2s ease-in-out;
+    color 0.2s ease-in-out;
   a {
     background: var(--primary);
     color: var(--bg);
@@ -47,8 +46,7 @@ section[id="campus"] > h3 {
       background: var(--bg);
       transition:
         background 0.25s ease-in-out,
-        color 0.25s ease-in-out,
-        border 0.25s ease-in-out;
+        color 0.25s ease-in-out;
     }
   }
 }
