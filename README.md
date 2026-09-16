@@ -218,7 +218,19 @@ Hier wordt de :hover pseudo element selector gebruikt zodat we de mogelijkheid v
 
 #### CSS-Carousel
 
-De highlight van onze website is het maken en ontwerpen van een CSS-carousel. 
+De highlight van onze website is het maken en ontwerpen van een CSS-carousel. Dit hebben we gedaan door het in een flexbox te zetten met `display: flex;`, en met `padding: 5em 0em` ervoor zorgen dat er witruimte tussen elke item zit, maar alleen bij de x-axis (horizontaal). We verbergen de scrollbar vam de y-axis (verticaal) met `overflow-y: hidden`, en zorgen ervoor dat elke element met de class naam `card-student` een anchor heeft, zodat `scroll-snape-type: x proximity;` ervoor kan zorgen dat bij elke portret foto het blijft hangen, net zoals met een magneet. 
+
+```css
+.carousel-student {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  anchor-name: --card-student;
+  scroll-snap-type: x proximity;
+  scroll-behavior: auto;
+  padding: 5em 0em;
+}
+```
 
 #### :Target
 
