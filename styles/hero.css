@@ -6,13 +6,24 @@ Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen 
 */
 
 .hero {
+  /* layout */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--primary);
-  color: var(--bg);
+
+  /* grootte */
+  margin: 1em auto;
   height: max(40em, calc(100vh - 6em - 10em));
   box-sizing: border-box;
+
+  /* kleur */
+  background: var(--primary);
+  color: var(--bg);
+
+  /* vorm */
+  border-radius: 1em;
+
+  /* tekst */
   h1 {
     font-size: 5em;
     color: var(--bg);
