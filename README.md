@@ -135,7 +135,9 @@ In de `<footer>` is er een paragraaf dat aangeeft welke personen deel hebben gem
 De CSS selectors, properties, en at-rules hebben we gesplitst in zeven documenten. Zoals eerder aangegeven hebben we dit gedaan zodat het makkelijker is te werken in verschillende documenten, en dat we ook notities kunnen schrijven voor andere wat alles precies doet en waar. Dit hebben proberen te doen op een logische manier. `campus.css` bevat alle CSS wat over de amstelcampus betreft, ``footer.css`` bevat alle styling dat toegepast wordt aan de `<footer>`, etc etc. In die bestanden zijn er een aantal leuke ontwerpkeuzes gemaakt die we hier gaan bespreken. 
 
 #### @Media Queries
-We maken gebruik van media queries in de `screens.css` bestand, omdat het de one-column/mobile-first ontwerp om tovert naar een desktop-friendly layout, maar ook om aan te geven dat [animaties](#animaties) niet hoeven af te spelen als de gebruiker geen animaties wilt zien. Dit doen we met `@media` breakpoints. De belangrijkste media query is die we gebruiken voor grote schermen, zodat als het een bepaalde breedte heeft, dat als de scherm groter is dan `60em` (ongv. `960px` als de element lettertype `16px` is), de campus-carousel een grid-layout gebruikt
+We maken gebruik van media queries in de `screens.css` bestand, omdat het de one-column/mobile-first ontwerp om tovert naar een desktop-friendly layout, maar ook om aan te geven dat [animaties](#animaties) niet hoeven af te spelen als de gebruiker geen animaties wilt zien. Dit doen we met `@media` breakpoints. De belangrijkste media query is die we gebruiken voor grote schermen, zodat als het een bepaalde breedte heeft, dat als de scherm groter is dan `60em` (ongv. `960px` als de element lettertype `16px` is), de campus-carousel een grid-layout gebruikt waar het plaatje de meeste ruimte gebruikt van de linker kolom, en de koptekst en paragraaf de rechter kolom.
+
+<img width="1023" height="778" alt="brave_00LTpzjev5" src="https://github.com/user-attachments/assets/db95327b-2fec-4e2f-9e04-f69d308afd21" />
 
 #### Fonts
 
