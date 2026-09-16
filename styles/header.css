@@ -30,7 +30,7 @@ header {
   a {
     text-decoration: none;
     &:visited {
-      color: inherit;
+      color: var(--primary);
     }
   }
 
