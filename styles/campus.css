@@ -15,6 +15,7 @@ img[src="../assets/amstel.avif"] {
   object-fit: center;
   max-width: 90svw;
   margin: auto;
+  border-radius: 0.5em;
   @media (min-width: 60em) {
     max-width: 70svh;
   }
@@ -26,12 +27,47 @@ img[src="../assets/amstel.avif"] {
   justify-content: center;
   gap: 0em 1em;
   padding-left: 0;
+  transition:
+    background 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    border 0.2s ease-in-out;
+  a {
+    background: var(--primary);
+    color: var(--bg);
+    font-weight: 700;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    &:visited {
+      color: var(--bg);
+    }
+    &:hover {
+      color: var(--color);
+      background: var(--bg);
+      transition:
+        background 0.25s ease-in-out,
+        color 0.25s ease-in-out,
+        border 0.25s ease-in-out;
+    }
+  }
 }
 
 /* Carousel Category */
 .category-campus {
+  display: none;
+  /* 
+  scroll-margin-top zorgt ervoor dat het mninder 'springt' terwijl je aan het navigeren ben in het menu, zonder dat we JS hoeven toe te voegen dat scrollY aanpast.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-margin-top
+  https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY
+  */
+  scroll-margin-top: 30svh;
+
   h3 {
     text-align: left;
+  }
+  &:target {
+    display: block;
+    height: fit-content;
   }
 }
 
@@ -57,6 +93,7 @@ img[src="../assets/amstel.avif"] {
   max-width: fit-content;
   text-align: left;
   img {
+    border-radius: 0.5em;
     aspect-ratio: 4/3;
     object-fit: cover;
     max-height: 30dvh;
