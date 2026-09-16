@@ -48,6 +48,7 @@ img[src="../assets/amstel.avif"] {
       "img titel"
       "img tekst";
     column-gap: 2em;
+    justify-items: stretch;
 
     a,
     img {
