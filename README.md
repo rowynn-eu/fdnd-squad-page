@@ -23,6 +23,12 @@ Live link naar onze webpage: https://edu.nl/e8nq8
 
 De instructie voor deze leertaak staan in de [WIKI](https://github.com/fdnd-task/your-tribe-squad-page/wiki)
 
+## Team
+
+[Rowynn Sewkaransing](https://github.com/rowynn-eu)
+[Noey Oo](https://github.com/Noeyoo26)
+[Emmanuel Asenso-kusi](https://github.com/emmatje)
+
 ## Licentie
 
 This project is licensed under the terms of the [MIT license](./LICENSE).
