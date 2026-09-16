@@ -43,7 +43,7 @@ De structuur van de body is [HEADER](#header), [MAIN](#main) en [FOOTER](#footer
 
 ##### HEADER
 
-In de header zijn er twee `<p>` elementen, die de wordmark FDND en het studiejaar 26/27 toont. Daartussen zijn er twee links `(<a>)` in een `<nav>` element die zorgen voor de navigatie van de twee 'pagina's' op de website. Dit is mogelijk vanwege de ``href=#`` waar de linkjes naar verwijst, en die verwijzen naar twee sections van de hoofd-inhoud van onze pagina.
+In de header zijn er twee `<p>` elementen, die de wordmark FDND en het studiejaar 26/27 toont. Daartussen zijn er twee links `(<a>)` in een `<nav>` element die zorgen voor de navigatie van de twee 'pagina's' op de website. Dit is mogelijk vanwege de ``href=#`` waar de linkjes naar verwijst, en die verwijzen naar twee sections van de hoofd-inhoud van onze pagina. Dit zorgt voor interactie zonder JavaScript (JS) te gebruiken.
 
 ```html
 <header>
@@ -58,18 +58,49 @@ In de header zijn er twee `<p>` elementen, die de wordmark FDND en het studiejaa
 
 ##### MAIN
 
-In de main staan drie sections, een section met een "hero" class dat bevat een `<h1>` titel, een `<strong>` element om te benadrukken waarover deze website gaat, en een paragraaf `(p)`. De tweede section bevat informatie over de studenten en docenten in een `<ul>` wat een lijst van linkjes is en verwijst naar de visitekaartjes van eenieder.
+In de main staan drie `<sections>`, een section met een "hero" class dat bevat een `<h1>` titel, een `<strong>` element om te benadrukken waarover deze website gaat, en een paragraaf `(p)`. De tweede section bevat informatie over de studenten en docenten in een `<ul>` wat een lijst van linkjes is en verwijst naar de visitekaartjes van eenieder.
 
-De tweede en derde sections hebben een ID selector.
+De tweede en derde sections hebben ook een ID selector. Dit zorgt ervoor dat de ``href=#`` declaraties weten waar ze naar toe moeten springen. Dit zorgt er ook voor dat de url veranderd naar `/#squad` of `/#campus`.
 
 ```html
-<section id="squad">
-<section id="campus">
+<section id="squad"> <!-- Verwijst naar een <section> element met de ID id="squad" -->
+<section id="campus"> <!-- Verwijst naar een <section> element met de ID id="campus" -->
+```
+
+De tweede `<section>` bevat alle visitekaartjes van de studenten. Ze zijn geformatteerd op een bepaalde manier, en allemaal genested in een [CSS-carousel](#CSS-Carousel)
+
+
+Net als de vorige, de derde `<section>`, maakt ook gebruik van ID selectors (`#campus`) zodat we interactie kunnen toevoegen aan onze website met 'tabjes navigatie', die we combineren met de css pseudo selector [:target](#:target). 
+
+```html
+<h3>KNOW YOUR CAMPUS</h3>
+<ul class="button-campus">
+  <a href="#food">FOOD</a> <!-- Verwijst naar een section met de ID id="food" -->
+  <a href="#social">SOCIAL</a> <!-- etc. etc. -->
+  <a href="#study">STUDY</a>
+</ul>
 ```
 
 
-
 ##### FOOTER
+
+### CSS
+
+#### @Media Queries
+
+#### Fonts
+
+#### Animaties
+
+#### @Keyframes
+
+#### CSS-Carousel
+
+#### Scroll-bar Styling
+
+#### :hover
+
+#### :focus-visible
 
 ## Bronnen
 
@@ -99,6 +130,7 @@ CSS
 - scroll-snap-align CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-align
 - filter CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/filter
 - box-shadow CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow
+- :focus-visible https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible
 
 Auteursrechten
 - Fotos van squadmates: Gekoppelde Visitekaartjes, maar ook die gedeeld zijn via MS Teams.
