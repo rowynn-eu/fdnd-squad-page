@@ -67,7 +67,17 @@ De tweede en derde sections hebben ook een ID selector. Dit zorgt ervoor dat de 
 <section id="campus"> <!-- Verwijst naar een <section> element met de ID id="campus" -->
 ```
 
-De tweede `<section>` bevat alle visitekaartjes van de studenten. Ze zijn geformatteerd op een bepaalde manier, en allemaal genested in een [CSS-carousel](#CSS-Carousel)
+De tweede `<section>` bevat alle visitekaartjes van de studenten en docenten. Ze zijn geformatteerd op een bepaalde manier, en allemaal genested in een UL, dat een `class="carousel-student` attribute heeft, dat we gaan gebruiken voor de [CSS-carousel](#CSS-Carousel). Bekijk de comments hieronder.
+
+```html
+<!-- Roepnaam van de student/docent -->
+<ul class="card-student"> <!-- Geeft het de class="card-student" zodat we het kunnen stylen met CSS. -->
+  <a href="studentennaam.com/your-tribe-profile-card/" target="_blank" title="Naam van de student">
+    <img loading="lazy" src="./assets/students/naam.avif" />
+    <h3>Volledige naam van de student</h3>
+  </a>
+</ul>
+```
 
 
 Net als de vorige, de derde `<section>`, maakt ook gebruik van ID selectors (`#campus`) zodat we interactie kunnen toevoegen aan onze website met 'tabjes navigatie', die we combineren met de css pseudo selector [:target](#:target). 
