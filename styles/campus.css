@@ -60,13 +60,14 @@ img[src="../assets/amstel.avif"] {
   https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-margin-top
   https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY
   */
-  scroll-margin-top: 5em;
+  scroll-margin-top: 30svh;
 
   h3 {
     text-align: left;
   }
   &:target {
     display: block;
+    height: fit-content;
   }
 }
 
