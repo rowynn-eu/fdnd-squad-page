@@ -188,6 +188,8 @@ We maken ook gebruik van een paar hover animaties voor onze website. Afbeeldinge
 
 ```
 
+Hier wordt de :hover pseudo element selector gebruikt zodat we de mogelijkheid van een interactie kunnen weergeven aan de gebruiker. Dit heet feedforward, maar het is ook een 'affordance' dat de gebruiker kan herkennen bij andere websites dat het iets is waarop ze kunnen tikken.
+
 <img width="auto" height="400" alt="brave_aDn0lZoRVh" src="https://github.com/user-attachments/assets/cbd0e058-8111-4007-994a-c9770f92022c" />
 
 ```css
@@ -216,11 +218,10 @@ We maken ook gebruik van een paar hover animaties voor onze website. Afbeeldinge
 
 #### CSS-Carousel
 
-#### Scroll-bar Styling
-
-#### :hover
+De highlight van onze website is het maken en ontwerpen van een CSS-carousel. 
 
 #### :target
+
 
 ## Bronnen
 
