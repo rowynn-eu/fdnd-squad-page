@@ -26,12 +26,40 @@ img[src="../assets/amstel.avif"] {
   justify-content: center;
   gap: 0em 1em;
   padding-left: 0;
+  transition:
+    background 0.2s ease-in-out,
+    color 0.2s ease-in-out,
+    border 0.2s ease-in-out;
+  a {
+    background: var(--primary);
+    color: var(--bg);
+    font-weight: 700;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    &:visited {
+      color: inherit;
+    }
+    &:hover {
+      color: var(--color);
+      background: var(--bg);
+      transition:
+        background 0.2s ease-in-out,
+        color 0.2s ease-in-out,
+        border 0.2s ease-in-out;
+    }
+  }
 }
 
 /* Carousel Category */
 .category-campus {
+  display: none;
+  transition-behavior: allow-discrete;
   h3 {
     text-align: left;
+  }
+  &:target {
+    display: block;
   }
 }
 
