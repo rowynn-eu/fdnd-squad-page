@@ -41,9 +41,15 @@ In de `\<head>` worden zeven CSS files geladen. Het gaat over zeven local CSS fi
 
 De structuur van de body is [HEADER](#header), [MAIN](#main) en [FOOTER](#footer).
 
-#####
+##### HEADER
 
 In de header zijn er twee `\<p>` elementen, die de wordmark FDND en het studiejaartaal toont. Daartussen is zijn er twee links in een `<\nav>` element die zorgen voor de navigatie van de twee 'pagina's' op de website.
+
+##### MAIN
+
+In de main staan drie sections, een section met een "hero" class dat bevat een h1 titel, een strong element om te benadrukken waarover deze website gaat, en paragraaf met een Call to Action. De tweede section bevat informatie over de studenten en docenten in een ul wat een lijst van linkjes is en verwijst naar de visitekaartjes van eenieder.
+
+##### FOOTER
 
 ## Bronnen
 
