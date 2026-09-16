@@ -72,7 +72,7 @@ box-shadow CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Referen
 ### Auteursrechten
 
 Fotos van squadmates
-Gekoppelde Visitekaartjes, maar ook gedeeld via MS Teams.
+Gekoppelde Visitekaartjes, maar ook die gedeeld zijn via MS Teams.
 
 Fotos van de Amstelcampus
 HvanA, “HvanA tipt: de beste (en minder goede) studieplekken van de HvA,” HvanA, Jan. 20, 2020. [Online]. Available: https://hvana.nl/nieuws/hvana-tipt-de-beste-en-minder-goede-studieplekken-van-de-hva
@@ -80,8 +80,11 @@ HvanA, “HvanA tipt: de beste (en minder goede) studieplekken van de HvA,” Hv
 Foto van Joost Faber
 “Agency Frontend Design & Development | Leerbedrijf voor mbo | HvA.” https://www.hva.nl/nieuws/2026/3/fdnd-agency-leren-werken-alsof-je-al-het-werkveld-zit
 
+Foto van Sanne 't Hooft
+Github profiel https://github.com/shooft
+
 Overige Fotos
-Rowynn Sewkaransing
+Rowynn Sewkaransing, eigen werk
 
 ## Team
 
