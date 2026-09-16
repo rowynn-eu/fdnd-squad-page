@@ -16,6 +16,7 @@ https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
   anchor-name: --card-student;
   scroll-snap-type: x proximity;
   scroll-behavior: auto;
+  padding: 5em 0em;
 }
 .card-student {
   scroll-snap-align: center;
@@ -23,9 +24,9 @@ https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
   /* img wijzigingen */
   a {
     text-decoration: none;
-}
-h3 {
-      font-size: 1em;
+  }
+  h3 {
+    font-size: 1em;
   }
   img {
     height: auto;
@@ -34,15 +35,19 @@ h3 {
     /* border: 0.25em var(--primary) solid; */
     max-height: 30svh;
     filter: grayscale(50%);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
     /* hover wijzigingen */
     &:hover {
       filter: grayscale(0%);
-      transform: translateY(-8px); 
-      transition: transform 0.3s ease,box-shadow 0.3s ease;
+      transform: translateY(-1em);
+      transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
     }
   }
 }
-
 
 .docent {
   h3 {
