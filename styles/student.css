@@ -32,8 +32,7 @@ https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
     height: auto;
     aspect-ratio: 3/4;
     object-fit: cover;
-    border: 0.25em var(--primary) solid;
-    border-radius: 0.25em;
+    border-radius: 5% 0% 0% 0%;
     max-height: 30svh;
     filter: grayscale(50%);
     transition:
