@@ -16,11 +16,11 @@ Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen 
 }
 
 @keyframes hero-fill {
-  0% {
+  from {
     background: var(--bg);
     color: var(--primary);
   }
-  100% {
+  to {
     background: var(--primary);
     color: var(--bg);
   }
