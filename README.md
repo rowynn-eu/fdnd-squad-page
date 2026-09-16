@@ -1,5 +1,7 @@
 # Squad page FDND
+<img width="auto" height="600" alt="brave_ll2YJthJqb" src="https://github.com/user-attachments/assets/31711ca4-5927-42f2-b72e-aa762f7ce190" />
 
+  
 ## Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
@@ -137,10 +139,11 @@ De CSS selectors, properties, en at-rules hebben we gesplitst in zeven documente
 #### @Media Queries
 We maken gebruik van media queries in de `screens.css` bestand, omdat het de one-column/mobile-first ontwerp om tovert naar een desktop-friendly layout, maar ook om aan te geven dat [animaties](#animaties) niet hoeven af te spelen als de gebruiker geen animaties wilt zien. Dit doen we met `@media` breakpoints. De belangrijkste media query is die we gebruiken voor grote schermen, zodat als het een bepaalde breedte heeft, dat als de scherm groter is dan `60em` (ongv. `960px` als de element lettertype `16px` is), de campus-carousel een grid-layout gebruikt waar het plaatje de meeste ruimte gebruikt van de linker kolom, en de koptekst en paragraaf de rechter kolom.
 
-<img width="auto" height="400" alt="brave_00LTpzjev5" src="https://github.com/user-attachments/assets/db95327b-2fec-4e2f-9e04-f69d308afd21" />
-
+<img width="400" height="auto" alt="brave_00LTpzjev5" src="https://github.com/user-attachments/assets/db95327b-2fec-4e2f-9e04-f69d308afd21" />
+  
 #### Fonts
-<img width="auto" height="200" alt="image" src="https://github.com/user-attachments/assets/d9155055-de94-43ed-bbf7-d28e2e6bf623" />  
+<img width="400" height="auto" alt="image" src="https://github.com/user-attachments/assets/d9155055-de94-43ed-bbf7-d28e2e6bf623" />  
+  
 We hebben gekozen voor de Montserrat `sans serif` lettertype ontworpen door Julieta Ulanovsky, omdat het een geometrische, moderne look geeft. We laden dit in CSS met een `@import` at-rule in onze `main.css` bestand. Zo wordt het extern geladen via Google Fonts, en kunnen we het een variable geven in onze `:root` pseudo-class, zodat als we de lettertype willen veranderen, kunnen wij het met één regel doen.
 
 ```css
@@ -155,16 +158,100 @@ font-family: var(--font);
 }
 ```
 #### Animaties
+In de `hero.css` hebben we een animatie waar we een `@keyframes` at-rule gebruiken om de hero-splash een zwevende gevoel te geven en als een introduce tot onze pagina.  
 
-#### @Keyframes
+We maken ook gebruik van een paar hover animaties voor onze website. Afbeeldingen met hun code kan je onder bekijken. Voor de hero-splash maken we ook gebruik van `@prefers-reduced motion: no-preference` om als default geen animatie weer te geven, maar als de gebruiker geen voorkeur heeft om ze dan wel toe te passen.
+
+<img width="400" height="auto" alt="brave_NGaz6QKs03" src="https://github.com/user-attachments/assets/bdfcb911-d5fe-41be-abf1-4887186884f8" />
+  
+```css
+/* hero.css */
+@keyframes hero-text {
+  0%,
+  100% {
+    transform: scale(1) rotate(-1deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(1deg);
+  }
+}
+
+/* screens.css */
+
+.hero {
+  h1 {
+    @media (prefers-reduced-motion: no-preference) {
+      animation: hero-text 5s ease-in-out infinite;
+    }
+  }
+}
+
+```
+
+Hier wordt de :hover pseudo element selector gebruikt zodat we de mogelijkheid van een interactie kunnen weergeven aan de gebruiker. Dit heet feedforward, maar het is ook een 'affordance' dat de gebruiker kan herkennen bij andere websites dat het iets is waarop ze kunnen tikken of klikken.
+
+<img width="400" height="auto" alt="brave_aDn0lZoRVh" src="https://github.com/user-attachments/assets/cbd0e058-8111-4007-994a-c9770f92022c" />
+
+```css
+.button-campus {
+  a {
+    background: var(--primary);
+    color: var(--bg);
+    font-weight: 700;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    &:visited {
+      color: var(--bg);
+    }
+    &:hover {
+      color: var(--color);
+      background: var(--bg);
+      transition:
+        background 0.25s ease-in-out,
+        color 0.25s ease-in-out,
+        border 0.25s ease-in-out;
+    }
+  }
+}
+```
 
 #### CSS-Carousel
 
-#### Scroll-bar Styling
+De highlight van onze website is het maken en ontwerpen van een CSS-carousel. Dit hebben we gedaan door het in een flexbox te zetten met `display: flex;`, en met `padding: 5em 0em` ervoor zorgen dat er witruimte tussen elke item zit, maar alleen bij de x-axis (horizontaal). We verbergen de scrollbar vam de y-axis (verticaal) met `overflow-y: hidden`, en zorgen ervoor dat elke element met de class naam `card-student` een anchor heeft, zodat `scroll-snape-type: x proximity;` ervoor kan zorgen dat bij elke portret foto het blijft hangen, net zoals met een magneet. 
 
-#### :hover
+```css
+.carousel-student {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  anchor-name: --card-student;
+  scroll-snap-type: x proximity;
+  scroll-behavior: auto;
+  padding: 5em 0em;
+}
+```
 
-#### :focus-visible
+#### :Target
+
+Met de `:target` selector kunnen we navigatie met tabjes realiseren zonder JS te gebruiken, onder andere mogelijkheden. We gebruiken het om ervoor te zorgen dat als een html element een class heeft van `category-campus`, dat we het 'verbergen' met `display: none;`. We geven dan ook de parent element een `scroll-margin-top:` van `30svh` (een viewport waarde in de hoogte, dat de kleinste gedeelte van een browser neemt zonder andere elementen mee te nemen). Daarna, met `:target`, zeggen wij dat het weer terug tevoorschijn moet komen, maar de hoogte moet wel passen binnen de content.
+
+<img width="400" height="auto" alt="brave_FRQhx48OT1" src="https://github.com/user-attachments/assets/c984d84e-b828-4d9c-93b9-c79f6fc8661d" />
+
+```css
+.category-campus {
+  display: none;
+  scroll-margin-top: 30svh;
+
+  h3 {
+    text-align: left;
+  }
+  &:target {
+    display: block;
+    height: fit-content;
+  }
+}
+```
 
 ## Bronnen
 
@@ -186,7 +273,7 @@ CSS
 - :root CSS pseudo-class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root
 - Media Query fundamentals https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Media_queries
 - @import media query https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@import
-- - :target pseudo class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:target
+- :target pseudo class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:target
 - prefers-reduced-motion CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
 - transition CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition
 - @keyframes CSS at-rule https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@keyframes
@@ -194,10 +281,16 @@ CSS
 - scroll-snap-type CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-type
 - scroll-behavior CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior
 - scroll-snap-align CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-align
+- scroll-margin-top CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-margin-top
 - filter CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/filter
 - box-shadow CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow
-- grid-area https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-area
-- grid-template https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template
+- grid-area CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-area
+- grid-template CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/grid-template
+- z-index CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/z-index
+- min-content https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/min-content
+- fit-content https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/fit-content
+- max-content https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/fit-content
+- default viewport units https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length#default_viewport_units
 
 Auteursrechten
 - Fotos van squadmates: Gekoppelde Visitekaartjes, maar ook die gedeeld zijn via MS Teams.
