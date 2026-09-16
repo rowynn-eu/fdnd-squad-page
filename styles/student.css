@@ -19,7 +19,14 @@ https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
 }
 .card-student {
   scroll-snap-align: center;
+
   /* img wijzigingen */
+  a {
+    text-decoration: none;
+}
+h3 {
+      font-size: 1em;
+  }
   img {
     height: auto;
     aspect-ratio: 3/4;
@@ -35,6 +42,7 @@ https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
     }
   }
 }
+
 
 .docent {
   h3 {
