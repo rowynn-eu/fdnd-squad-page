@@ -49,20 +49,5 @@ Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen 
   /* tekst */
   h1 {
     font-size: 5em;
-    /* 
-    We willen geen animaties op onze hero als de gebruiker reduced-motion aan heeft.
-    Ook als bron: Sanne's CSS Challenge 2
-    https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
-    */
-    @media (prefers-reduced-motion: no-preference) {
-      animation: hero-text 2s ease-in-out infinite;
-      animation: hero-fill 1s ease-in forwards;
-    }
-  }
-  @media (prefers-reduced-motion: no-preference) {
-    animation-name: hero-fill;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
   }
 }

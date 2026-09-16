@@ -66,9 +66,4 @@ body {
     color: var(--primary);
     font-weight: 700;
   }
-
-  /* Responsive Media Queries */
-  @media (min-width: 60em) {
-    max-width: 70%;
-  }
 }

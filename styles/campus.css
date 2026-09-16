@@ -16,9 +16,6 @@ img[src="../assets/amstel.avif"] {
   max-width: 90svw;
   margin: auto;
   border-radius: 0.5em;
-  @media (min-width: 60em) {
-    max-width: 70svh;
-  }
 }
 
 /* Carousel ID selector knoppen */
@@ -98,31 +95,5 @@ img[src="../assets/amstel.avif"] {
     object-fit: cover;
     max-height: 30dvh;
     width: auto;
-  }
-
-  /* Response Layout for Large Screens */
-  @media (min-width: 60em) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-      "img titel"
-      "img tekst";
-    column-gap: 2em;
-
-    a,
-    img {
-      grid-area: img;
-      max-width: 30dvw;
-      align-self: stretch;
-    }
-    h3 {
-      grid-area: titel;
-      font-size: 1.5em;
-      align-self: end;
-    }
-    p {
-      grid-area: tekst;
-      font-size: 1.25em;
-    }
   }
 }
