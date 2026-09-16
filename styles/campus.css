@@ -38,15 +38,15 @@ img[src="../assets/amstel.avif"] {
     text-decoration: none;
     border-radius: 0.5em;
     &:visited {
-      color: inherit;
+      color: var(--bg);
     }
     &:hover {
       color: var(--color);
       background: var(--bg);
       transition:
-        background 0.2s ease-in-out,
-        color 0.2s ease-in-out,
-        border 0.2s ease-in-out;
+        background 0.25s ease-in-out,
+        color 0.25s ease-in-out,
+        border 0.25s ease-in-out;
     }
   }
 }
@@ -54,7 +54,7 @@ img[src="../assets/amstel.avif"] {
 /* Carousel Category */
 .category-campus {
   display: none;
-  transition-behavior: allow-discrete;
+
   h3 {
     text-align: left;
   }
