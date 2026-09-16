@@ -62,7 +62,11 @@ transition CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Referen
 :root CSS pseudo-class https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root
 scroll-behaviour CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-behavior
 prefers-reduced-motion CSS property https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
-
+scroll-snap-type CSS property
+scroll-behavior CSS property
+scroll-snap-align CSS property
+filter CSS property
+box-shadow CSS property
 [Bronnen vermeld bij de Leertaak Squad Page](https://github.com/fdnd-task/your-tribe-squad-page/wiki)
 
 ### Auteursrechten
