@@ -33,6 +33,40 @@ body {
   }
 }
 
+.amstel {
+  @media (min-width: 50em) {
+    img {
+      max-width: 50em;
+    }
+  }
+}
+
+/* .amstel {
+  @media (min-width: 60em) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "titel img"
+      "tekst img";
+    column-gap: 2em;
+    justify-items: stretch;
+
+    a,
+    img {
+      grid-area: img;
+      max-width: 30dvw;
+      align-self: stretch;
+    }
+    h2 {
+      grid-area: titel;
+      align-self: end;
+    }
+    p {
+      grid-area: tekst;
+    }
+  }
+} */
+
 .card-campus {
   @media (min-width: 60em) {
     display: grid;

@@ -16,10 +16,11 @@ section[id="campus"] > h3 {
 
 .amstel {
   img {
-    width: 50svw;
+    /* Wat een tering gezeik met deze foto. */
     aspect-ratio: 4/3;
     object-fit: cover;
     border-radius: 0.5em;
+    width: 50dvw;
   }
 }
 
