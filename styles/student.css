@@ -1,14 +1,3 @@
-/* 
-Noey & Emmanuel,
-
-In dit bestand gaan we gebruik maken van .class selectors.
-
-Zo kunnen wij een css-carousel maken.
-
-Uitleg: 
-https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
-
-*/
 .carousel-student {
   display: flex;
   overflow-x: auto;

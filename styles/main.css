@@ -1,17 +1,3 @@
-/* 
-Noey & Emmanuel,
-
-In dit bestand hoort de layout en one-column/mobile-first design.
-
-Uitleg: 
-https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
-
-
-In dit bestand gebruiken we ROOT variables, die globaal kunnen gebruikt worden, zoals onze kleuren palet.
-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root
------ ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 
-*/
-
 /*
 
 Hier wordt Montserrat geimporteerd, zoals bepaald door onze 'huisstijl' van vorige week. 

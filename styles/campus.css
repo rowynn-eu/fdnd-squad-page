@@ -1,9 +1,3 @@
-/* Noey & Emmanuel,
-
-In dit bestand gaan we gebruik maken van .class selectors.
-
-Zo kunnen wij een css-carousel maken. */
-
 /* Hier wordt er witruitme gegeven boven de sections. */
 
 section[id="campus"] > h3 {
