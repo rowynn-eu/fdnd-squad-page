@@ -10,6 +10,11 @@ https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
 
 */
 
+/* 
+Hier wordt de header gestyled. Het krijgt een z-index van 1 zodat het altijd boven alle andere elementen te voorschijn is, maar  het zit ook in een flexbox met space-between zodat het helemaal verspreid wordt over de breedte.
+ De items in de nav element krijgen een :inherit dat ervoor zorgt dat ze ook in een flex omgeving ziten, net als de parent header element met een klein stukje ruimte ertussen. 
+*/
+
 header {
   /* Layout */
   z-index: 1;
