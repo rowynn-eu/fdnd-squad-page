@@ -1,0 +1,17 @@
+<script>
+    function move(direction) {
+        const viewport = document.getElementById('viewport');
+        // Voeg hier je logica toe om de scrollpositie aan te passen
+        // Bijvoorbeeld: viewport.scrollBy(0, direction * 100);
+    }
+
+    // Logica om markers te genereren op basis van het aantal slides
+    const slideCount = 46; 
+    const markerContainer = document.getElementById('marker-container');
+    for (let i = 1; i <= slideCount; i++) {
+        const marker = document.createElement('span');
+        marker.className = 'marker';
+        marker.innerText = i;
+        markerContainer.appendChild(marker);
+    }
+</script>
