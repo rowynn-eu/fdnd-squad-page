@@ -1,0 +1,41 @@
+/* 
+Noey & Emmanuel,
+
+In dit bestand gaan we gebruik maken van .class selectors.
+
+Zo kunnen wij een css-carousel maken.
+
+Uitleg: 
+https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
+
+*/
+
+header {
+  /* Layout */
+  z-index: 1;
+  display: flex;
+  margin: 0em auto;
+  background: var(--bg);
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  align-items: center;
+  padding: 15px 20px;
+
+  position: sticky;
+  top: 0em;
+
+  /* Vormgeving */
+  a {
+    text-decoration: none;
+    padding: 1em;
+    margin: 0em;
+  }
+
+  border-bottom: 0.2em solid var(--primary);
+
+  nav {
+    display: inherit;
+    gap: 1em;
+  }
+}

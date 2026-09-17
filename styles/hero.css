@@ -1,0 +1,44 @@
+/* 
+Noey & Emmanuel,
+
+Het kan mogelijk zijn dat we een hero gedeelte gaan maken tijdens het ontwerpen van onze nieuwe visuele hierachie, dus ik hebe het bestandje al aangemaakt. :)
+
+*/
+
+@keyframes hero-text {
+  0%,
+  100% {
+    transform: scale(1) rotate(-1deg);
+  }
+  50% {
+    transform: scale(1.05) rotate(1deg);
+  }
+}
+
+.hero {
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* grootte */
+  margin-top: 1em;
+  margin-bottom: 5em;
+  height: max(40em, calc(90vh - 6em - 10em));
+  padding: auto;
+  box-sizing: border-box;
+
+  /* kleur */
+  background: var(--primary);
+  color: var(--bg);
+
+  /* vorm */
+  border-radius: 1em;
+  border: 0.25em solid var(--primary);
+
+  /* tekst */
+  h1 {
+    font-size: 6svh;
+    color: var(--bg);
+  }
+}

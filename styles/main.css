@@ -1,0 +1,76 @@
+/* 
+Noey & Emmanuel,
+
+In dit bestand hoort de layout en one-column/mobile-first design.
+
+Uitleg: 
+https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
+
+
+In dit bestand gebruiken we ROOT variables, die globaal kunnen gebruikt worden, zoals onze kleuren palet.
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root
+----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- 
+*/
+
+/*
+
+Hier wordt Montserrat geimporteerd, zoals bepaald door onze 'huisstijl' van vorige week. 
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* color-scheme: light dark; */
+  --primary: #1d26be;
+  --secondary: #0c0f45;
+  --tertiary: #8389eb;
+  --bg: light-dark(#f4f4f0, #282828);
+  --txt: light-dark(#282828, #f4f4f0);
+  --font: "Montserrat", sans-serif;
+
+  /* 
+  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----
+  In geval dat we een light/dark mode toggle gaan toevoegen met JS, is 90% van het werk voor ons af.
+  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----
+   */
+
+  /* &[data-theme="light"] {
+    color-scheme: light;
+  }
+
+  &[data-theme="dark"] {
+    color-scheme: dark;
+  } */
+}
+
+body {
+  /* Layout */
+  margin: 1em auto;
+  text-align: center;
+  max-width: 90dvw;
+
+  /* Typografie, Kleur */
+  background: var(--bg);
+  color: var(--txt);
+  scrollbar-color: var(--primary) var(--bg);
+  scrollbar-width: thin;
+
+  font-family: var(--font);
+  font-style: normal;
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  a {
+    color: var(--primary);
+    &:visited {
+      color: var(--primary);
+    }
+  }
+}

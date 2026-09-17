@@ -1,0 +1,69 @@
+/* 
+Noey & Emmanuel,
+
+In dit bestand gaan we gebruik maken van MEDIA QUERIES.
+Zo krijgen we een responsive layout voor onze squad page.
+
+*/
+
+/* Ingeval dat een @media query niet goed werkt, wordt het hier opnieuw geimporteerd met een uncomment. */
+/* @import url(../styles/campus.css);
+@import url(../styles/footer.css);
+@import url(../styles/header.css);
+@import url(../styles/hero.css);
+@import url(../styles/main.css);
+@import url(../styles/student.css); */
+
+body {
+  @media (min-width: 60em) {
+    width: 50svw;
+  }
+}
+
+.hero {
+  h1 {
+    /* 
+    We willen geen animaties op onze hero als de gebruiker reduced-motion aan heeft.
+    Ook als bron: Sanne's CSS Challenge 2
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
+    */
+    @media (prefers-reduced-motion: no-preference) {
+      animation: hero-text 5s ease-in-out infinite;
+    }
+  }
+}
+
+img[src="./assets/amstel.avif"] {
+  @media (min-width: 60em) {
+    width: 60svh;
+  }
+}
+
+.card-campus {
+  /* Response Layout for Large Screens */
+  @media (min-width: 60em) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "img titel"
+      "img tekst";
+    column-gap: 2em;
+    justify-items: stretch;
+
+    a,
+    img {
+      grid-area: img;
+      max-width: 30dvw;
+      align-self: stretch;
+    }
+    h3 {
+      grid-area: titel;
+      font-size: 1.5em;
+      align-self: end;
+    }
+    p {
+      grid-area: tekst;
+      font-size: 1.25em;
+    }
+  }
+}

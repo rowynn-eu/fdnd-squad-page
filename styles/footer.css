@@ -1,0 +1,16 @@
+/* 
+Noey & Emmanuel,
+
+In dit bestand worden alle wijzigingen gemaakt voor de footer.
+
+*/
+
+footer {
+  border-top: 1px solid var(--primary);
+  ul {
+    padding: 0;
+  }
+  a {
+    font-size: 0.5em;
+  }
+}

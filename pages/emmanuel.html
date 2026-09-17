@@ -1,109 +1,86 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>campus</title>
-    <link rel="stylesheet" href="styles/emmanuel.css">
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amstelcampus</title>
+    <link rel="stylesheet" href="./emmanuel.css" />
+</head>
+<body>
 
-<!--navigatiebalk-->
-<header>
-    <h1>Amstelcampus</h1>
-    <nav>
-        <ul>
-            <li><a href="#kaartjes">Kaartjes</a></li>
-            <li><a href="#food">Food</a></li>
-            <li><a href="#scoials">Socials</a></li>
-            <li><a href=""></a></li>
-        </ul>
-    </nav>
+    <!-- Navigatiebalk -->
+    <header>
+        <h1>Amstelcampus</h1>
+        <nav>
+            <ul>
+                <li><a href="#kaartjes">Kaartjes</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#scoials">Socials</a></li>
+                <li><a href="#info">Info</a></li>
+            </ul>
+        </nav>
+    </header>
 
-</header>
+    <!-- Hoofdinformatie over de campus -->
+    <main>
+        <section id="over">
+            <h2>Over</h2>
+            <p>Welkom op mijn campuspagina.</p>
+        </section>
 
-<!--hoofdinformatie over de campus-->
-<main>
+        <div class="carousel-wrapper">
+            <div class="viewport" id="viewport">
+        <!-- Slides -->
+        <div class="slide">1</div>
+        <div class="slide">2</div>
+        <div class="slide">3</div>
+        <div class="slide">4</div>
+        <div class="slide">5</div>
+        <div class="slide">6</div>
+        <div class="slide">7</div>
+        <div class="slide">8</div>
+        <div class="slide">9</div>
+        <div class="slide">10</div>
+        <div class="slide">11</div>
+        <div class="slide">12</div>
+        <div class="slide">13</div>
+        <div class="slide">14</div>
+        <div class="slide">15</div>
+        <div class="slide">16</div>
+        <div class="slide">17</div>
+        <div class="slide">18</div>
+        <div class="slide">19</div>
+        <div class="slide">20</div>
+        <div class="slide">21</div>
+        <div class="slide">22</div>
+        <div class="slide">23</div>
+        <div class="slide">24</div>
+        <div class="slide">25</div>
+        <div class="slide">26</div>
+        <div class="slide">27</div>
+        <div class="slide">28</div>
+        <div class="slide">29</div>
+        <div class="slide">30</div>
+        <div class="slide">31</div>
+        <div class="slide">32</div>
+        <div class="slide">33</div>
+        <div class="slide">34</div>
+        <div class="slide">35</div>
+        <div class="slide">36</div>
+        <div class="slide">37</div>
+        <div class="slide">38</div>
+        <div class="slide">39</div>
+        <div class="slide">40</div>
+        <div class="slide">41</div>
+        <div class="slide">42</div>
+        <div class="slide">43</div>
+        <div class="slide">44</div>
+        <div class="slide">45 </div>
+        <div class="slide">46</div>
+    <!-- Voeg hier de overige slides toe tot 46 -->
+            </div>
+        </div>
+    </main>
 
- <section id="over">
-  <h2>Over </h2>
-            <p>Welkom op mijn  campuspagina.</p>
-  
-
-  </section>
-
- div class="carousel-wrapper">
-  <div class="viewport" id="viewport">
-    <!-- Generate 46 slides -->
-    <div class="slide">1</div>
-    <div class="slide">2</div>
-    <div class="slide">3</div>
-    <div class="slide">4</div>
-    <div class="slide">5</div>
-    <div class="slide">6</div>
-    <div class="slide">7</div>
-    <div class="slide">8</div>
-    <div class="slide">9</div>
-    <div class="slide">10</div>
-    <div class="slide">11</div>
-    <div class="slide">12</div>
-    <div class="slide">13</div>
-    <div class="slide">14</div>
-    <div class="slide">15</div>
-    <div class="slide">16</div>
-    <div class="slide">17</div>
-    <div class="slide">18</div>
-    <div class="slide">19</div>
-    <div class="slide">20</div>
-    <div class="slide">21</div>
-    <div class="slide">22</div>
-    <div class="slide">23</div>
-    <div class="slide">24</div>
-    <div class="slide">25</div>
-    <div class="slide">26</div>
-    <div class="slide">27</div>
-    <div class="slide">28</div>
-    <div class="slide">29</div>
-    <div class="slide">30</div>
-    <div class="slide">31</div>
-    <div class="slide">32</div>
-    <div class="slide">33</div>
-    <div class="slide">34</div>
-    <div class="slide">35</div>
-    <div class="slide">36</div>
-    <div class="slide">37</div>
-    <div class="slide">38</div>
-    <div class="slide">39</div>
-    <div class="slide">40</div>
-    <div class="slide">41</div>
-    <div class="slide">42</div>
-    <div class="slide">43</div>
-    <div class="slide">44</div>
-    <div class="slide">45 </div>
-    <!-- ... repeat until 46 -->
-    <div class="slide">46</div>
-  </div>
-
-  <div class="controls">
-    <button onclick="move(-1)">Up</button>
-    <button onclick="move(1)">Down</button>
-  </div>
-
-<div class="markers" id="marker-container">
-    <!-- Markers will be generated via JS -->
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-</main>
-  
+</body>
+</html>
