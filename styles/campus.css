@@ -1,12 +1,10 @@
-/* 
-Noey & Emmanuel,
+/* Noey & Emmanuel,
 
 In dit bestand gaan we gebruik maken van .class selectors.
 
-Zo kunnen wij een css-carousel maken.
+Zo kunnen wij een css-carousel maken. */
 
-
-*/
+/* Hier wordt er witruitme gegeven boven de sections. */
 
 section[id="campus"] > h3 {
   margin-top: 5em;
@@ -27,7 +25,7 @@ section[id="campus"] > h3 {
   }
 }
 
-/* Carousel ID selector knoppen */
+/* Hier worden de knoppen van de campus gestyled, met een transition en dat het ook centraal staat van de body. Kleur, achtergrond , rondingen , en animaties worden hier bepaald. Omdat het alleen voor interactie wordt gebruikt op kleinere elementen, (en ook niet te snel) dan hoeven wij dit niet te vermelden onder reduced motion.  */
 .button-campus {
   display: flex;
   justify-content: center;
@@ -57,7 +55,11 @@ section[id="campus"] > h3 {
   }
 }
 
-/* Carousel Category */
+/* 
+
+Dit gedeelte zorgt voor de 'tabjes navigatie' systeem die we hebben met alleen CSS. Hier wordt :target slim gebruikt om ervoor te zorgen dat er een 'pageless' gevoel is, terwijl het eigenlijk naar de volgende section springt.
+
+*/
 .category-campus {
   display: none;
   /* 
@@ -76,7 +78,7 @@ section[id="campus"] > h3 {
   }
 }
 
-/* Campus Carousel Parent */
+/* Hier worden de stylingen van de campus kaarten bepaald die aan het hoofdelement zit, of echter de 'parent'.  Hier wordt de verticale scrollbaar verwijderd, en zorgt ook voor dat als je scrollt naar een element, dath ij stopt bij een van ze. Met een gap van 10em zie je alleen 1 kaart tegelijk.*/
 .carousel-campus {
   display: flex;
   overflow-x: auto;
@@ -87,7 +89,7 @@ section[id="campus"] > h3 {
   gap: 10em;
 }
 
-/* Campus Kaartjes */
+/* Hier worden de campus kaartjes zelf gestyled. Dat zowel min als max fit-content heeft, blijft het responsive (geloof ik?) maar neemt het ook de volledige ruimt in van de hoodfparent. */
 
 .card-campus {
   display: grid;
