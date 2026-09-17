@@ -16,8 +16,9 @@ We hebben in een team en squad page gemaakt dat onze 'squad' hoort te represente
 
 Wat vind je op de pagina?
 
-- Persoonlijke Visitekaartjes & Portretten: Elk squad-lid heeft een eigen, uniek visitekaartje ontworpen. De portretfoto’s op de squad page zijn gekoppeld aan de persoonlijke webpagina’s van ieder squad-lid. Door op een portret te klikken of naar een profiel te navigeren, krijg je direct toegang tot het bijbehorende visitekaartje en ontdek je meer over de persoon achter het portret.
-- De Amstelcampus Gids: Naast onze persoonlijke profielen vind je op de pagina relevante en handige informatie over de Amstelcampus. Hiermee verbinden we onze persoonlijke identiteit als studenten direct aan de fysieke omgeving waarin we samenwerken en studeren.
+Persoonlijke Visitekaartjes & Portretten: Elk squad-lid heeft een eigen, uniek visitekaartje ontworpen. De portretfoto’s op de squad page zijn gekoppeld aan de persoonlijke webpagina’s van ieder squad-lid. Door op een portret te klikken of naar een profiel te navigeren, krijg je direct toegang tot het bijbehorende visitekaartje en ontdek je meer over de persoon achter het portret.  
+
+De Amstelcampus Gids: Naast onze persoonlijke profielen vind je op de pagina relevante en handige informatie over de Amstelcampus. Hiermee verbinden we onze persoonlijke identiteit als studenten direct aan de fysieke omgeving waarin we samenwerken en studeren.
 
 Live link naar onze webpage: https://edu.nl/e8nq8
 
@@ -25,17 +26,17 @@ Live link naar onze webpage: https://edu.nl/e8nq8
 
 Deze webpagina is opgebouwd rondom twee hoofdonderdelen: het persoonlijke squad-overzicht en de interactieve Amstelcampus-gids. Hieronder zie je hoe de website gebruikt kan worden:
 
-#### Meet Your Squad (Persoonlijke Visitekaartjes)
-Navigeren naar profielen: Op de hoofdpagina vind je de portretten van alle squad-leden.
-Details bekijken: Door op een portretfoto te klikken (of naar een specifiek profiel te navigeren), opent direct het unieke, persoonlijke visitekaartje van dat beurslid. Hierop vind je meer achtergrondinformatie en creatieve uitingen over de persoon achter het portret.
+### Meet Your Squad (Persoonlijke Visitekaartjes)
+Navigeren naar profielen: Op de hoofdpagina vind je de portretten van alle squad-leden.  
+Details bekijken: Door op een portretfoto te klikken (of naar een specifiek profiel te navigeren), opent direct het unieke, persoonlijke visitekaartje van die squad-lid. Hierop vind je meer informatie over de persoon achter het portret.  
 
-<img width="1087" height="678" alt="Screenshot 2026-09-17 at 16 01 08" src="https://github.com/user-attachments/assets/c2b76ac6-e070-4b02-9eb4-98d46dbdbedb" />
+<img width="400" height="auto" alt="Screenshot 2026-09-17 at 16 01 08" src="https://github.com/user-attachments/assets/c2b76ac6-e070-4b02-9eb4-98d46dbdbedb" />
 
-#### Know Your Campus (De Amstelcampus Gids)
-Locaties filteren: Via de categorieknoppen bovenin (Food, Social en Study) kun je eenvoudig schakelen tussen verschillende soorten hotspots en faciliteiten op en rondom de Amstelcampus.
-Informatie ontdekken: Elke locatie is voorzien van een sfeerbeeld, een beschrijving (zoals de unieke vibe van plekken zoals YUSU Coffee) en praktische info. Hiermee koppelen we onze identiteit als studenten direct aan onze fysieke leeromgeving.
+### Know Your Campus (De Amstelcampus Gids)
+Locaties filteren: Via de categorieknoppen bovenin (Food, Social en Study) kun je eenvoudig schakelen tussen verschillende soorten hotspots en faciliteiten op en rondom de Amstelcampus.  
+Informatie ontdekken: Elke locatie is voorzien van een sfeerbeeld, een beschrijving (zoals de unieke vibe van plekken zoals YUSU Coffee) en praktische info. Hiermee koppelen we onze   identiteit als studenten direct aan onze fysieke leeromgeving.  
 
-<img width="1144" height="586" alt="Screenshot 2026-09-17 at 16 01 16" src="https://github.com/user-attachments/assets/658fb95e-6a7a-42ca-82a9-b55b81e0b286" />
+<img width="400" height="auto" alt="Screenshot 2026-09-17 at 16 01 16" src="https://github.com/user-attachments/assets/658fb95e-6a7a-42ca-82a9-b55b81e0b286" />
 
 
 ## Kenmerken
