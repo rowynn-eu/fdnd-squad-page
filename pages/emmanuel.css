@@ -1,17 +1,24 @@
-<script>
-    function move(direction) {
-        const viewport = document.getElementById('viewport');
-        // Voeg hier je logica toe om de scrollpositie aan te passen
-        // Bijvoorbeeld: viewport.scrollBy(0, direction * 100);
-    }
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden; /* Verbergt de scrollbalk */
+}
 
-    // Logica om markers te genereren op basis van het aantal slides
-    const slideCount = 46; 
-    const markerContainer = document.getElementById('marker-container');
-    for (let i = 1; i <= slideCount; i++) {
-        const marker = document.createElement('span');
-        marker.className = 'marker';
-        marker.innerText = i;
-        markerContainer.appendChild(marker);
-    }
-</script>
+.viewport {
+    display: flex; /* Zet alle slides naast elkaar */
+    overflow-x: auto; /* Maakt horizontaal scrollen mogelijk */
+    scroll-snap-type: x mandatory; /* Zorgt dat slides netjes vastklikken */
+    gap: 20px; /* Ruimte tussen de slides */
+    padding: 20px;
+}
+
+.slide {
+    flex: 0 0 200px; /* Elke slide is altijd 200px breed */
+    height: 300px;
+    background-color: #f0f0f0;
+    scroll-snap-align: start; /* Klikt vast aan het begin van de slide */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
