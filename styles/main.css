@@ -73,4 +73,12 @@ body {
       color: var(--primary);
     }
   }
+
+  p,
+  strong,
+  em,
+  b,
+  i {
+    font-size: 1.25em;
+  }
 }

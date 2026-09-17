@@ -10,16 +10,17 @@ https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
 
 */
 
-img[src="./assets/amstel.avif"] {
-  aspect-ratio: 5/3;
-  object-fit: center;
-  max-width: 70svw;
-  margin: auto;
-  border-radius: 0.5em;
-}
-
 section[id="campus"] > h3 {
   margin-top: 5em;
+}
+
+.amstel {
+  img {
+    width: 50svw;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 0.5em;
+  }
 }
 
 /* Carousel ID selector knoppen */

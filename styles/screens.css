@@ -33,14 +33,7 @@ body {
   }
 }
 
-img[src="./assets/amstel.avif"] {
-  @media (min-width: 60em) {
-    width: 60svh;
-  }
-}
-
 .card-campus {
-  /* Response Layout for Large Screens */
   @media (min-width: 60em) {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -63,7 +56,6 @@ img[src="./assets/amstel.avif"] {
     }
     p {
       grid-area: tekst;
-      font-size: 1.25em;
     }
   }
 }
