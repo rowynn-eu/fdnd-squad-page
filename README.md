@@ -23,6 +23,21 @@ Live link naar onze webpage: https://edu.nl/e8nq8
 
 ## Gebruik
 
+Deze webpagina is opgebouwd rondom twee hoofdonderdelen: het persoonlijke squad-overzicht en de interactieve Amstelcampus-gids. Hieronder zie je hoe de website gebruikt kan worden:
+
+#### Meet Your Squad (Persoonlijke Visitekaartjes)
+Navigeren naar profielen: Op de hoofdpagina vind je de portretten van alle squad-leden.
+Details bekijken: Door op een portretfoto te klikken (of naar een specifiek profiel te navigeren), opent direct het unieke, persoonlijke visitekaartje van dat beurslid. Hierop vind je meer achtergrondinformatie en creatieve uitingen over de persoon achter het portret.
+
+<img width="1087" height="678" alt="Screenshot 2026-09-17 at 16 01 08" src="https://github.com/user-attachments/assets/c2b76ac6-e070-4b02-9eb4-98d46dbdbedb" />
+
+#### Know Your Campus (De Amstelcampus Gids)
+Locaties filteren: Via de categorieknoppen bovenin (Food, Social en Study) kun je eenvoudig schakelen tussen verschillende soorten hotspots en faciliteiten op en rondom de Amstelcampus.
+Informatie ontdekken: Elke locatie is voorzien van een sfeerbeeld, een beschrijving (zoals de unieke vibe van plekken zoals YUSU Coffee) en praktische info. Hiermee koppelen we onze identiteit als studenten direct aan onze fysieke leeromgeving.
+
+<img width="1144" height="586" alt="Screenshot 2026-09-17 at 16 01 16" src="https://github.com/user-attachments/assets/658fb95e-6a7a-42ca-82a9-b55b81e0b286" />
+
+
 ## Kenmerken
 
 De website is gebouwd met [HTML](#HTML) en [CSS](#CSS).
