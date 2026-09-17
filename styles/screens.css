@@ -14,24 +14,39 @@ Zo krijgen we een responsive layout voor onze squad page.
 @import url(../styles/main.css);
 @import url(../styles/student.css); */
 
+/*
+
+Hier wordt de body gestyled voor grotere schermen, zodat het niet eindeloze blijft uitzoomen, zoals het geval met ultrawide beeldschermen. Dit doen we met media queries vanaf een minimale waarde.
+
+*/
+
 body {
   @media (min-width: 60em) {
     width: 50svw;
   }
+  @media (min-width: 80em) {
+    width: 80em;
+  }
 }
+/* 
+
+  We willen geen animaties op onze hero als de gebruiker reduced-motion aan heeft. Terwijl accessibility niet de focus is deze sprint, is het verstandig om de gewoonte nu al toe te passen.
+
+*/
 
 .hero {
   h1 {
-    /* 
-    We willen geen animaties op onze hero als de gebruiker reduced-motion aan heeft.
-    Ook als bron: Sanne's CSS Challenge 2
-    https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
-    */
     @media (prefers-reduced-motion: no-preference) {
       animation: hero-text 5s ease-in-out infinite;
     }
   }
 }
+
+/*
+
+Hier wordt de amstelcampus plaatje gestyled, dat steeds eigenwijs was geworden vanwege onze viewport unit. Er is waarschijnlijk een nettere manier, maar als de scherm een minimale breedte heeft van 50 em (ongeveer 800px) dan blijft het klein. 
+
+*/
 
 .amstel {
   @media (min-width: 50em) {
@@ -66,6 +81,12 @@ body {
     }
   }
 } */
+
+/*
+
+Hier worden de kaartjes van de campus gestyled dat het in een grid layout wordt ge representeerd, wat fijner is op grotere schermen. 
+
+*/
 
 .card-campus {
   @media (min-width: 60em) {

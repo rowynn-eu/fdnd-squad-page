@@ -5,8 +5,6 @@ In dit bestand gaan we gebruik maken van .class selectors.
 
 Zo kunnen wij een css-carousel maken.
 
-Uitleg: 
-https://developer.chrome.com/blog/carousels-with-css#carousel_gallery
 
 */
 
@@ -14,7 +12,12 @@ section[id="campus"] > h3 {
   margin-top: 5em;
 }
 
+/* Hier wordt de witruimte bepaald tussen de sections, maar ook de grootte en scaling van de afbeelding wordt hier bepaald. */
+
 .amstel {
+  h2 {
+    margin-top: 5em;
+  }
   img {
     /* Wat een tering gezeik met deze foto. */
     aspect-ratio: 4/3;
