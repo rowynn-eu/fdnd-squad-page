@@ -5,6 +5,8 @@ In dit bestand worden alle wijzigingen gemaakt voor de footer.
 
 */
 
+/* Heel klein, maar hier wordt een border toegevoegd om een <hr> element te vervangen (omdat het niet gebruikelijk is om het op dat manier te gebruiken voor semantische redenen). De letter type wordt ook veranderd zodat de orginele linkjes heel klein zijn.*/
+
 footer {
   border-top: 1px solid var(--primary);
   ul {
