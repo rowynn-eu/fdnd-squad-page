@@ -16,10 +16,10 @@ Hier wordt Montserrat geimporteerd, zoals bepaald door onze 'huisstijl' van vori
   --font: "Montserrat", sans-serif;
 
   /* 
-  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----
-  In geval dat we een light/dark mode toggle gaan toevoegen met JS, is 90% van het werk voor ons af.
-  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----  -----
-   */
+
+Als we een dark-light theme will toevoegen met JS kan het, maar ik had te tijd niet om dit te bespreken met mijn teamgenoten, dus het wordt gecommented. Jammer!
+
+*/
 
   /* &[data-theme="light"] {
     color-scheme: light;
