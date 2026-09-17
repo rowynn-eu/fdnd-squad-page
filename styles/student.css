@@ -1,3 +1,9 @@
+/*
+
+Hier wordt een css-carousel gebouwd, 
+
+*/
+
 .carousel-student {
   display: flex;
   overflow-x: auto;
@@ -29,11 +35,11 @@
     /* hover wijzigingen */
     &:hover {
       filter: grayscale(0%);
-      box-shadow: 0.25em 0.25em 0em 0em;
+      box-shadow: 0.5em 0.5em 0em 0em;
       transform: translateY(-1em);
       transition:
         transform 0.5s ease,
-        box-shadow 0.5s ease;
+        box-shadow 0.1s ease;
     }
   }
 }
