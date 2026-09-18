@@ -1,3 +1,4 @@
+```css
 ---
 import Layout from "../../layouts/Layout.astro";
 ---
@@ -467,3 +468,4 @@ section > header {
   justify-content: center;
   font-weight: bold;
 }
+```
