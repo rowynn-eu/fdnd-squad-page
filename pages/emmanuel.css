@@ -5,7 +5,7 @@ import Layout from "../../layouts/Layout.astro";
 <Layout title="Carousel Gallery">
   <section>
     <header>
-      <h2>Vertical List</h2>
+      <h2>:horizontal List</h2>
       <div class="tags">
         <span>Scroll Buttons</span>
         <span>Scroll Markers</span>
@@ -13,7 +13,7 @@ import Layout from "../../layouts/Layout.astro";
         <span>Anchor</span>
       </div>
       <!-- move tabindex=0 to another demo -->
-      <p>A basic vertical carousel example with scroll buttons and markers.</p>
+      <p>A basic :horizontal carousel example with scroll buttons and markers.</p>
     </header>
 
     <div role="region" aria-label="List carousel demo">
@@ -253,3 +253,4 @@ import Layout from "../../layouts/Layout.astro";
     justify-content: center;
     font-weight: bold;
 }
+
