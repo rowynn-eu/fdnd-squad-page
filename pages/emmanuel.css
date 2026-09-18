@@ -1,3 +1,85 @@
-body {
-  margin: auto;
+.carousel {
+  block-size: 50svh;
+  max-inline-size: var(--size-content-2);
+
+  display: grid;
+  grid-auto-flow: row;
+  gap: var(--size-4);
+
+  @media (width <= 650px) {
+    margin-inline-start: 55px;
+    margin-inline-end: 5vmin;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    block-size: 85cqi;
+  }
+
+  .carousel__slide {
+    background: light-dark(white, var(--surface-2));
+    padding: 0;
+    container-type: scroll-state;
+
+    display: inline-flex;
+    place-items: center;
+    place-content: center;
+
+    aspect-ratio: var(--ratio-landscape);
+
+    border: 1px solid var(--surface-3);
+    box-shadow: var(--shadow-2);
+    border-radius: var(--radius-2);
+
+    > p {
+      font-family: var(--font-antique);
+      font-size: var(--font-size-5);
+      transition: font-size 1s var(--ease-spring-4);
+    }
+
+    @container scroll-state(snapped: block) {
+      > p {
+        color: var(--link);
+        font-size: var(--font-size-7);
+      }
+    }
+
+    /* todo: maybe remove? */
+    &:focus {
+      outline: 2px solid var(--link);
+      outline-offset: -2px;
+    }
+  }
+}
+
+section > header {
+  @media (width > 650px) {
+    padding-inline: 0;
+  }
+}
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden; /* Verbergt de scrollbalk */
+}
+
+.viewport {
+  display: flex; /* Zet alle slides naast elkaar */
+  overflow-x: auto; /* Maakt horizontaal scrollen mogelijk */
+  scroll-snap-type: x mandatory; /* Zorgt dat slides netjes vastklikken */
+  gap: 20px; /* Ruimte tussen de slides */
+  padding: 20px;
+}
+
+.slide {
+  flex: 0 0 200px; /* Elke slide is altijd 200px breed */
+  height: 300px;
+  background-color: #f0f0f0;
+  scroll-snap-align: start; /* Klikt vast aan het begin van de slide */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
 }
