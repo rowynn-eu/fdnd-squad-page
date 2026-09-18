@@ -1,29 +1,4 @@
----
-import Layout from "../../layouts/Layout.astro";
----
-
-<Layout
-  title="Carousel Gallery"
-  > <section
-  > <header
-  > <h2
-  > Vertical
-  List</h2
-  > <div
-  class="tags"
-  > <span
-  > Scroll
-  Buttons</span
-  > <span
-  > Scroll
-  Markers</span
-  > <span
-  > Scroll-State
-  Queries</span
-  > <span
-  > Anchor</span
-  > </div
-  > <!--
+ <!--
   move
   tabindex=0
   to
